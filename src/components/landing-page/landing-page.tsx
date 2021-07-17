@@ -28,19 +28,19 @@ export class LandingPage {
       <div>
         <ResponsiveContainer class="hero">
           <feature-pill link="https://ionic.io/resources/webinars/stencil-enterprise-design-systems-at-scale">
-            <strong>Register now</strong> • 
-            Stencil Enterprise Webinar: Design Systems at Scale
+            <strong>现在注册</strong> • 
+            企业网络研讨会：设计大规模系统
           </feature-pill>
           <hgroup>
             <h1>Build. Customize. Distribute. Adopt.</h1>
             <p>
-              Stencil is a toolchain for building reusable, scalable Design Systems. Generate small, blazing fast, and 100% standards based Web Components that run in every browser.
+              Stencil 是一个用于构建可复用、可扩展系统的工具链。基于 Web Components 标准创建，体积小、速度快且可在任意浏览器运行。
             </p>
             <stencil-route-link url="/docs/getting-started" class="hero-button" anchorClass="btn-get-started">
-              Get started
+              现在开始
             </stencil-route-link>
             <stencil-route-link url="/docs/introduction" class="hero-button" anchorClass="btn-why-stencil">
-              Why Stencil?
+              为什么是 Stencil ？
             </stencil-route-link>
           </hgroup>
           <svg class="landing-page__bg" width="661" height="573" viewBox="0 0 661 573" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +62,7 @@ export class LandingPage {
 
         <div class="companies">
           <ResponsiveContainer>
-            <h3>Powering design systems and cross-framework components at</h3>
+            <h3>为以下提供系统设计和跨框架组件</h3>
             <ul>
               <li>
                 <svg width="31" height="37" viewBox="0 0 31 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -241,34 +241,34 @@ export class LandingPage {
             <div class="two-col">
               <hgroup>
                 <h2>
-                  <strong>The magical, reusable web component compiler.</strong> Start building in seconds.
+                  <strong>神奇、可复用的 Web 组件编译器。</strong> 在几秒钟内开始构建。
                 </h2>
               </hgroup>
 
               <ul class="list--unstyled list--icon">
                 <li>
-                  <app-icon name="checkmark" /> Web Component-based
+                  <app-icon name="checkmark" /> 基于 Web Components
                 </li>
                 <li>
-                  <app-icon name="checkmark" /> Asynchronous rendering pipeline
+                  <app-icon name="checkmark" /> 异步渲染
                 </li>
                 <li>
-                  <app-icon name="checkmark" /> TypeScript support
+                  <app-icon name="checkmark" /> 支持 TypeScript
                 </li>
                 <li>
-                  <app-icon name="checkmark" /> One-way Data Binding
+                  <app-icon name="checkmark" /> 单向数据流
                 </li>
                 <li>
-                  <app-icon name="checkmark" /> Component prerendering
+                  <app-icon name="checkmark" /> 组件预渲染
                 </li>
                 <li>
-                  <app-icon name="checkmark" /> Simple component lazy-loading
+                  <app-icon name="checkmark" /> 简单的组件懒加载
                 </li>
                 <li>
-                  <app-icon name="checkmark" /> JSX support
+                  <app-icon name="checkmark" /> 支持 JSX
                 </li>
                 <li>
-                  <app-icon name="checkmark" /> Dependency-free components
+                  <app-icon name="checkmark" /> 无依赖组件
                 </li>
               </ul>
             </div>
@@ -276,16 +276,16 @@ export class LandingPage {
 
           <div class="cta">
             <div class="cta__primary">
-              <h3>Getting started is simple:</h3>
+              <h3>安装:</h3>
               <code class={{ copied: this.copiedState > 0 }} onClick={this.copyCommand}>
                 {COPY_STATES[this.copiedState]}
               </code>
               <span>
-                Requires <stencil-route-link url="/docs/getting-started">NPM v6</stencil-route-link>
+                需要 <stencil-route-link url="/docs/getting-started">NPM v6</stencil-route-link> 以上
               </span>
             </div>
             <p class="cta__secondary">
-              Dive deeper with our <stencil-route-link url="/docs/getting-started">Getting Started</stencil-route-link> guide
+              通过 <stencil-route-link url="/docs/getting-started">快速上手</stencil-route-link> 详细了解
             </p>
           </div>
         </section>
@@ -293,7 +293,7 @@ export class LandingPage {
         <section class="gradient-bg">
           <ResponsiveContainer>
             <h2>
-              <strong>Stencil doesn’t fight the web platform.</strong> It embraces it.
+              <strong>Stencil 与任何 web 平台都不冲突。</strong>选择拥抱适配。
             </h2>
             <ul class="feature-list list--unstyled">
               <li class="feature-list__item">
@@ -307,8 +307,8 @@ export class LandingPage {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <h3>Simple</h3>
-                <p>With intentionally small tooling, a tiny API, and zero configuration, Stencil gets out of the way and lets you focus on your work.</p>
+                <h3>简单</h3>
+                <p>借助优质的小型工具、微小的 API 和零配置，Stencil 帮助您摆脱困境，专注于工作。</p>
               </li>
               <li class="feature-list__item">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -319,8 +319,8 @@ export class LandingPage {
                     fill="#141334"
                   />
                 </svg>
-                <h3>Lightweight</h3>
-                <p>A tiny runtime, prerendering, and the raw power of native Web Components make Stencil one of the fastest compilers around.</p>
+                <h3>体积小</h3>
+                <p>快速的运行时间、预渲染和原生 Web 组件的原始功能使 Stencil 成为最快的编译器之一。</p>
               </li>
               <li class="feature-list__item">
                 <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -331,8 +331,8 @@ export class LandingPage {
                     fill="#141334"
                   />
                 </svg>
-                <h3>Future proof</h3>
-                <p>Build cross-framework components and design systems on open web standards, and break free of Framework Churn.</p>
+                <h3>稳定可维护</h3>
+                <p>在 Web 标准上设计系统并构建跨框架组件，摆脱框架束缚。</p>
               </li>
             </ul>
           </ResponsiveContainer>
@@ -343,27 +343,27 @@ export class LandingPage {
             <div class="two-col">
               <hgroup>
                 <h2>
-                  The perfect tool for <strong>building a design system.</strong>
+                  <strong>构建设计系统</strong>的完美工具
                 </h2>
               </hgroup>
               <div>
                 <ul class="list--icon list--unstyled">
                   <li>
                     <app-icon name="checkmark" />
-                    Ensure consistent UX and brand experiences, at scale
+                    可确保一致的用户体验和品牌体验
                   </li>
                   <li>
                     <app-icon name="checkmark" />
-                    Web components run on any platform or device
+                    Web components 可在任何设备或平台运行
                   </li>
                   <li>
                     <app-icon name="checkmark" />
-                    Build a custom UI library that works across teams and projects
+                    跨团队或项目构建定制化的 UI 库
                   </li>
                 </ul>
-                <p>Interested in learning more about building design systems with Stencil?</p>
+                <p>有兴趣了解有关使用 Stencil 构建设计系统的更多信息吗？</p>
                 <stencil-route-link anchorClass="btn btn--tertiary btn--small" url="/docs/stencil-for-design-systems">
-                  Show me more
+                  查看更多
                 </stencil-route-link>
               </div>
             </div>
@@ -375,20 +375,20 @@ export class LandingPage {
             <div class="two-col">
               <hgroup>
                 <h2>
-                  <strong>Awesome developer experience</strong> out of the box.
+                  开箱即用<strong>超棒的开发体验</strong>。
                 </h2>
               </hgroup>
               <div>
                 <ul class="list--icon list--unstyled">
                   <li>
-                    <app-icon name="checkmark" /> Built-in dev-server for hot module reloading
+                    <app-icon name="checkmark" /> 通过 dev-server 构建以提供热更新功能
                   </li>
                   <li>
-                    <app-icon name="checkmark" /> Screenshot visual UI diffs
+                    <app-icon name="checkmark" /> 截屏虚拟 UI 差异
                   </li>
                   <li>
-                    <app-icon name="checkmark" /> Auto-generate component documentation <br />
-                    <span class="small">(including css variables)</span>
+                    <app-icon name="checkmark" /> 自动生成组件文档 <br />
+                    <span class="small">(包括 css 变量)</span>
                   </li>
                 </ul>
               </div>
@@ -401,12 +401,12 @@ export class LandingPage {
             <div class="two-col">
               <hgroup>
                 <h2>
-                  <strong>Build one component library</strong> for all of your apps.
+                  为所用的 app <strong>构建一个组件库。</strong>
                 </h2>
               </hgroup>
               <div>
-                <p>Stencil components are just Web Components, so they work with any major framework or no framework at all.</p>
-                <p>Learn how Stencil seamlessly integrates with:</p>
+                <p>Stencil 组件只是 Web 组件，因此它们适用于任何主要框架或直接使用。</p>
+                <p>了解 Stencil 如何与:</p>
                 <ul class="card-links list--unstyled">
                   <li>
                     <stencil-route-link class="card-links__item" url="/docs/react">
@@ -441,21 +441,21 @@ export class LandingPage {
         <section class="stencil-story">
           <ResponsiveContainer>
             <h2>
-              <strong>The Stencil story</strong>
+              <strong>关于 Stencil 的故事</strong>
             </h2>
-            <p>Stencil was created to power the components for Ionic Framework - a cross-platform mobile development technology stack used by more than 5M developers worldwide.</p>
+            <p>Stencil 旨在为 Ionic 的组件提供支持，Ionic 是一种跨平台移动开发技术堆栈，全球超过 500 万开发人员使用。</p>
             <div class="videos">
               <a href="https://youtu.be/RZ6MLELGsD8" class="video-thumbnail video-thumbnail--architecting">
                 <app-icon name="play" />
-                <span>Architecting A Component Compiler</span>
+                <span>构建组件编译器</span>
               </a>
               <a href="https://youtu.be/M1F81V-NhP0" class="video-thumbnail video-thumbnail--announcement">
                 <app-icon name="play" />
-                <span>See the v1 announcement</span>
+                <span>查看 v1 公告</span>
               </a>
               <a href="https://youtu.be/UfD-k7aHkQE" class="video-thumbnail video-thumbnail--launch">
                 <app-icon name="play" />
-                <span>Watch launch video</span>
+                <span>观看发布视频</span>
               </a>
             </div>
           </ResponsiveContainer>

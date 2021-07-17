@@ -136,8 +136,8 @@ export class NewsletterSignup {
             </g>
           </svg>
           <hgroup>
-            <h3>The Stencil Newsletter</h3>
-            <p>Keep up to date with all the latest Stencil news and updates.</p>
+            <h3>关于 Stencil 新闻订阅</h3>
+            <p>随时了解所有最新的 Stencil 新闻和更新。</p>
           </hgroup>
         </div>
 
@@ -156,13 +156,13 @@ export class NewsletterSignup {
                   value={this.email}
                   onInput={() => this.handleEmailChange(event)}
                   disabled={this.isLoading}
-                  placeholder="Email address"
+                  placeholder="输入邮箱地址"
                   class={this.isValid ? '' : 'error'}
                   aria-label="Email"
                   required
                 />
                 <button class="btn btn--primary" type="submit" disabled={this.isLoading || this.hasSubmitted}>
-                  Subscribe
+                  订阅
                 </button>
               </div>
               {!this.isValid && <p class="error-message">{this.inlineMessage}</p>}

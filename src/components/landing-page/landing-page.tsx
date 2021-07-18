@@ -37,7 +37,7 @@ export class LandingPage {
               Stencil 是一个用于构建可复用、可扩展系统的工具链。基于 Web Components 标准创建，体积小、速度快且可在任意浏览器运行。
             </p>
             <stencil-route-link url="/docs/getting-started" class="hero-button" anchorClass="btn-get-started">
-              现在开始
+              快速开始
             </stencil-route-link>
             <stencil-route-link url="/docs/introduction" class="hero-button" anchorClass="btn-why-stencil">
               为什么是 Stencil ？
@@ -62,7 +62,7 @@ export class LandingPage {
 
         <div class="companies">
           <ResponsiveContainer>
-            <h3>为以下提供系统设计和跨框架组件</h3>
+            <h3>为以下提供设计系统和跨框架组件</h3>
             <ul>
               <li>
                 <svg width="31" height="37" viewBox="0 0 31 37" fill="none" xmlns="http://www.w3.org/2000/svg">

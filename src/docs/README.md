@@ -1,7 +1,7 @@
 # Table of Contents
 
-* Introduction
-  * [Why Stencil](introduction/why-stencil.md)
+* 介绍
+  * [为什么用 Stencil](introduction/why-stencil.md)
   * [Goals and Objectives](introduction/goals-and-objectives.md)
   * [Browser Support](introduction/browser-support.md)
   * [Getting Started](introduction/getting-started.md)
@@ -9,7 +9,7 @@
   * [FAQ](introduction/faq.md)
   * [What is a Design System?](design-systems/what-is-design-system.md)
   * [Stencil for Design Systems](design-systems/stencil-for-design-systems.md)
-* Components
+* 组件
   * [API](components/api.md)
   * [Component](components/component.md)
   * [Lifecycle Methods](components/component-lifecycle.md)
@@ -22,7 +22,7 @@
   * [Host Element](components/host-element.md)
   * [Styling](components/styling.md)
   * [Functional Components](components/functional-components.md)
-* Framework Integrations
+* 框架集成
   * [Overview](framework-integration/overview.md)
   * [Bindings](framework-integration/bindings.md)
   * [Angular](framework-integration/angular.md)
@@ -30,7 +30,7 @@
   * [Vue](framework-integration/vue.md)
   * [Ember](framework-integration/ember.md)
   * [JavaScript](framework-integration/javascript.md)
-* Static Site Generation
+* 生成静态站点
   * [Overview](static-site-generation/overview.md)
   * [Prerender Config](static-site-generation/prerender-config.md)
   * [Basics](static-site-generation/basics.md)
@@ -38,13 +38,13 @@
   * [Meta tags](static-site-generation/meta.md)
   * [Server Side Rendering](static-site-generation/server-side-rendering-ssr.md)
   * [Deployment](static-site-generation/deployment.md)
-* Config
+* 配置
   * [Overview](config/overview.md)
   * [Dev Server](config/dev-server.md)
   * [Plugins](config/plugins.md)
   * [Extras](config/extras.md)
   * [CLI](config/cli.md)
-* Output Targets
+* 输出
   * [Overview](output-targets/overview.md)
   * [dist-custom-elements-bundle](output-targets/custom-elements.md)
   * [dist](output-targets/dist.md)
@@ -53,7 +53,7 @@
   * [docs-json](output-targets/docs-json.md)
   * [docs-custom](output-targets/docs-custom.md)
   * [Copy Tasks](output-targets/copy-tasks.md)
-* Guides
+* 指南
   * [Web Workers](guides/workers.md)
   * [Hydrate App](guides/hydrate-app.md)
   * [Bundling](guides/module-bundling.md)
@@ -65,7 +65,7 @@
   * [Stencil Store](guides/store.md)
   * [Publishing](guides/publishing.md)
   * [Deno (experimental)](guides/deno.md)
-* Testing
+* 测试
   * [Overview](testing/overview.md)
   * [Config](testing/config.md)
   * [Unit Testing](testing/unit-testing.md)
@@ -73,11 +73,11 @@
   * [Mocking](testing/mocking.md)
   * [Visual Screenshot Diff](testing/screenshot-visual-diff.md)
   * [Screenshot Connector](testing/screenshot-connector.md)
-* Core Compiler API
+* 核心编译 API
   * [Compiler API](core/compiler-api.md)
   * [CLI API](core/cli-api.md)
   * [Dev Server API](core/dev-server-api.md)
-* Community
+* 社区
   * [Stencil on Twitter](https://twitter.com/stenciljs)
   * [Stencil on Slack](https://stencil-worldwide.herokuapp.com/)
   * [Stencil on GitHub](https://github.com/ionic-team/stencil)

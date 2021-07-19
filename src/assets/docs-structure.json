@@ -23,7 +23,7 @@
         "url": "/docs/getting-started"
       },
       {
-        "text": "制作一个 demo",
+        "text": "My First Component",
         "filePath": "/assets/docs/introduction/my-first-component.json",
         "url": "/docs/my-first-component"
       },
@@ -33,12 +33,12 @@
         "url": "/docs/faq"
       },
       {
-        "text": "什么是设计系统？",
+        "text": "What is a Design System?",
         "filePath": "/assets/docs/design-systems/what-is-design-system.json",
         "url": "/docs/what-is-design-system"
       },
       {
-        "text": "在设计系统中的使用 Stencil",
+        "text": "Stencil for Design Systems",
         "filePath": "/assets/docs/design-systems/stencil-for-design-systems.json",
         "url": "/docs/stencil-for-design-systems"
       }
@@ -53,57 +53,57 @@
         "url": "/docs/api"
       },
       {
-        "text": "组件",
+        "text": "Component",
         "filePath": "/assets/docs/components/component.json",
         "url": "/docs/component"
       },
       {
-        "text": "生命周期",
+        "text": "Lifecycle Methods",
         "filePath": "/assets/docs/components/component-lifecycle.json",
         "url": "/docs/component-lifecycle"
       },
       {
-        "text": "属性",
+        "text": "Properties",
         "filePath": "/assets/docs/components/properties.json",
         "url": "/docs/properties"
       },
       {
-        "text": "内部状态",
+        "text": "Internal State",
         "filePath": "/assets/docs/components/state.json",
         "url": "/docs/state"
       },
       {
-        "text": "响应式数据",
+        "text": "Reactive Data",
         "filePath": "/assets/docs/components/reactive-data.json",
         "url": "/docs/reactive-data"
       },
       {
-        "text": "使用 JSX",
+        "text": "Using JSX",
         "filePath": "/assets/docs/components/templating-and-jsx.json",
         "url": "/docs/templating-jsx"
       },
       {
-        "text": "事件",
+        "text": "Events",
         "filePath": "/assets/docs/components/events.json",
         "url": "/docs/events"
       },
       {
-        "text": "方法",
+        "text": "Methods",
         "filePath": "/assets/docs/components/methods.json",
         "url": "/docs/methods"
       },
       {
-        "text": "宿主元素",
+        "text": "Host Element",
         "filePath": "/assets/docs/components/host-element.json",
         "url": "/docs/host-element"
       },
       {
-        "text": "样式",
+        "text": "Styling",
         "filePath": "/assets/docs/components/styling.json",
         "url": "/docs/styling"
       },
       {
-        "text": "函数式组件",
+        "text": "Functional Components",
         "filePath": "/assets/docs/components/functional-components.json",
         "url": "/docs/functional-components"
       }
@@ -113,12 +113,12 @@
     "text": "框架集成",
     "children": [
       {
-        "text": "概述",
+        "text": "Overview",
         "filePath": "/assets/docs/framework-integration/overview.json",
         "url": "/docs/overview"
       },
       {
-        "text": "绑定",
+        "text": "Bindings",
         "filePath": "/assets/docs/framework-integration/bindings.json",
         "url": "/docs/framework-bindings"
       },
@@ -153,17 +153,17 @@
     "text": "生成静态站点",
     "children": [
       {
-        "text": "概述",
+        "text": "Overview",
         "filePath": "/assets/docs/static-site-generation/overview.json",
         "url": "/docs/static-site-generation"
       },
       {
-        "text": "预渲染配置",
+        "text": "Prerender Config",
         "filePath": "/assets/docs/static-site-generation/prerender-config.json",
         "url": "/docs/prerender-config"
       },
       {
-        "text": "基础",
+        "text": "Basics",
         "filePath": "/assets/docs/static-site-generation/basics.json",
         "url": "/docs/static-site-generation-basics"
       },
@@ -173,17 +173,17 @@
         "url": "/docs/static-site-generation-debugging"
       },
       {
-        "text": "Meta 标签",
+        "text": "Meta tags",
         "filePath": "/assets/docs/static-site-generation/meta.json",
         "url": "/docs/static-site-generation-meta-tags"
       },
       {
-        "text": "服务端渲染",
+        "text": "Server Side Rendering",
         "filePath": "/assets/docs/static-site-generation/server-side-rendering-ssr.json",
         "url": "/docs/static-site-generation-server-side-rendering-ssr"
       },
       {
-        "text": "部署",
+        "text": "Deployment",
         "filePath": "/assets/docs/static-site-generation/deployment.json",
         "url": "/docs/static-site-generation-deployment"
       }

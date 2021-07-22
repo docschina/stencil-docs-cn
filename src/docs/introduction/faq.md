@@ -8,220 +8,212 @@ contributors:
 
 # FAQ
 
-## Introduction
+## 介绍
 
-### What is Stencil?
+### Stencil 是什么？
 
-Stencil is a developer-focused toolchain for building reusable, scalable component libraries, applications and design systems. It provides a compiler that generates highly optimized Web Components, and combines the best concepts of the most popular frameworks into a simple build-time tool.
+Stencil 是一个以开发人员为中心的工具链，用于构建可复用、可扩展的组件库、应用程序和设计系统。它提供了一个编译器，可以生成高度优化的 Web Components 组件，并将最流行框架的最佳概念结合到一个简单的构建时工具中。
 
-Stencil focuses on building components with web standards. It’s used by developers and organizations around the world, and is [100% free and MIT open source](https://github.com/ionic-team/stencil/blob/master/LICENSE.md).
+Stencil 专注于使用 Web 标准构建组件。它被世界各地的开发人员和组织使用，并且是 [100% 免费并且 MIT 开源](https://github.com/ionic-team/stencil/blob/master/LICENSE.md)。
 
+### Stencil 做了什么？
 
-### What does Stencil do?
+Stencil 帮助开发人员和团队构建和共享自定义组件。由于 Stencil 生成符合标准的 Web Components， Stencil 构建的组件可以直接与许多流行的框架一起使用，甚至可以在没有框架的情况下使用，因为它们只是 Web Components。 Stencil 还在 Web Components 之上启用了许多关键功能，特别是预渲染和对象作为属性传递（而不仅仅是字符串）。
 
-Stencil helps developers and teams build and share custom components. Since Stencil generates standards-compliant Web Components, the components you build with Stencil will work with many popular frameworks right out of the box, and can even be used without a framework because they are just Web Components. Stencil also enables a number of key capabilities on top of Web Components, in particular, prerendering, and objects-as-properties (instead of just strings).
 
+### Stencil 的用户是谁？
 
-### Who is Stencil for?
+Stencil 适用于希望构建可跨团队、框架和大型组织共享的自定义组件库和设计系统的开发人员和团队。
 
-Stencil is for developers and teams that want to build custom component libraries and design systems that can be shared across teams, frameworks and large organizations.
+设计师也可以使用 Stencil，满足将他们的原始设计愿景以高保真度始终如一地交付给所有用户的需求。
 
-Stencil can also be used by designers who want their original design visions delivered consistently, with high fidelity, to all users.
 
+### Stencil 的作者是谁？
 
-### Who makes Stencil?
+Stencil 是一个由 [Ionic 核心团队](https://ionicframework.com/) 发起的开源项目，以及来自社区的贡献。
 
-Stencil is an open source project started by the [Ionic core team](https://ionicframework.com/), with contributions also coming from the community.
+### 为什么制作 Stencil ？
 
+Stencil 由 Ionic Framework 团队创建，旨在使我们自己的组件库更快、更小并与所有主要框架兼容。 Web Components 提供了一种解决方案，将更多的工作推给浏览器以获得更好的性能，并针对所有框架都可以使用的基于标准的组件模型。
 
-### Why was Stencil created?
 
-Stencil was created by the Ionic Framework team to make our own component library faster, smaller, and compatible with all major frameworks. Web Components offered a solution by pushing more work to the browser for better performance, and targeting a standards-based component model that all frameworks could use.
+### 谁在用 Stencil？
 
+Stencil 最初是为 Ionic Framework 开发的，并且已经是一个非常成功的基于 WebComponents 的设计系统/UI 框架。 Web Components 现在在数以千计的应用商店应用中，并且每年有近 400 万个新的 Ionic Framework 项目被创建。
 
-### Who uses Stencil?
 
-Stencil was initially developed for Ionic Framework and has been a very successful Web Component-based design system/UI framework. Web Components are now in thousands of app store apps, and nearly 4 million new Ionic Framework projects are being created every year.
+### Stencil 与传统框架相比如何？
 
+Web Component 生态系统有各种各样的参与者，每个参与者对 Web Components 可以做什么和应该做什么都有不同的长期愿景。
 
-### How does Stencil compare to traditional frameworks?
+有些人认为 Web Components 应该取代第三方应用程序框架，而另一些人则认为 Web Components 更适合样式设计节点，不应该参与应用程序组件系统的业务。也有许多框架开发人员没有看到 Web Components 的意义，或者认为它们是对前端创新的侮辱。
 
-The Web Component ecosystem has a diverse set of players, each with a different long-term vision for what Web Components can and should do.
+有了 Stencil，我们的愿景就在中间。从长远来看，应用开发团队继续使用他们选择的框架。我们设想这些框架会继续变得更好、更小、更高效，对定位和使用 Web Components 的支持越来越好——随着公司继续将它们用于共享设计系统，大型团队将使用越来越多的 Web 组件。
 
-Some think Web Components should replace third-party app frameworks, while others think that Web Components are more suited for leaf/style/design nodes and shouldn’t get in the business of your app’s component system. There are also many framework developers that don’t see the point of Web Components, or consider them to be an affront to front-end innovation.
+与此同时，我们认为 Web Components 不可或缺的功能是解决那些组件分布和设计系统问题。然而，我们也相信 90% 的市场一开始都没有这些问题，所以目前关于 Web Components 优点的争论有点徒劳。
 
-With Stencil, our vision is somewhere in the middle. In the long term, we see app development teams continuing to use their framework of choice. We envision these frameworks continuing to get better, smaller, and more efficient, with increasingly good support for targeting and consuming Web Components -- and big teams will be consuming an increasing amount of Web Components as companies continue to embrace them for shared design systems.
 
-At the same time, we believe an indispensable feature for Web Components is solving those component distribution and design system problems. We also believe, however, that 90% of the market doesn’t have those problems to begin with, so the current debate about the merits of Web Components is somewhat unproductive.
+### 为什么 Stencil 被认为与框架无关？
 
+也许 Web Components 最吸引人的好处是它们让您的开发团队能够灵活地选择底层工具和框架——以及这些框架的版本——以及他们喜欢的工具。如前所述，实现通用设计系统的一大挑战是让您的所有开发团队仅对一组技术进行标准化。有了 Web Components，每个团队都可以使用最适合他们的东西，让他们完全自由地使用他们喜欢的工具——无论是现在还是未来。
 
-### Why is Stencil considered framework agnostic?
 
-Perhaps the most appealing benefit of Web Components is that they give your development teams the flexibility to choose the underlying tools and frameworks - and versions of those frameworks - and tools that they prefer. As pointed out earlier, one of the great challenges of implementing a universal design system is getting all of your development teams to standardize on just one set of technologies. With Web Components, each team can use what works best for them, giving them complete freedom to use the tools they love—today and tomorrow.
+## Stencil 提供了什么？
 
+### Stencil 有组件库吗？
 
-## What does Stencil provide?
+使用最广泛的 Stencil 组件库是 Ionic Framework，但 Stencil 本身只是一个工具链，并没有提供自己的组件库。如果您正在构建应用程序，我们鼓励您首先查看 Ionic 组件。
 
-### Does Stencil have a component library?
 
-The most widely used Stencil component library is the Ionic Framework, however, Stencil itself is only a toolchain and does not provide its own component library. We encourage you to first review Ionic components if you are building an application.
+### Stencil 是一个框架吗？
 
+Stencil 有意不充当独立框架，而是一种工具，它允许开发人员在许多项目、团队和大型组织中扩展与框架无关的组件。 Stencil 的超能力之一是它的灵活性：它的组件可以独立使用，也可以在传统框架中使用。
 
-### Is Stencil a framework?
 
-Stencil purposely does not strive to act as a stand-alone framework, but rather a tool which allows developers to scale framework-agnostic components across many projects, teams and large organizations. One of Stencil’s superpowers is its flexibility: its components could be used stand-alone, or within traditional frameworks.
+### Stencil 是否带有测试框架？
 
+是的，Stencil 为单元测试和端到端测试提供了一组丰富的 API。 [了解有关使用 Stencil 进行测试的更多信息](/docs/testing-overview)。
 
-### Does Stencil come with a testing framework?
 
-Yes, Stencil provides a rich set of APIs for unit and End-to-end tests. [Learn more about testing with Stencil](/docs/testing-overview).
 
+## 技术
 
 
-## Technology
+### 为什么 Stencil 使用 web components ？
 
+通过使用一致的 Web 标准，Web Components 不依赖于特定的框架运行时来执行。随着框架更改其 API，Web Components 不会更改，从而允许原始源继续在浏览器中本地工作。
 
-### Why does Stencil use web components?
+尽管我们喜欢今天的热门框架，但谁知道明天会带来什么？通过选择 Web Components，您可以帮助自己免受技术流失的威胁。
 
-By using a consistent set of web standards, Web Components do not depend on a specific framework runtime to execute. As frameworks change their APIs, Web Components do not, allowing for the original source to continue to work natively in a browser.
 
-After all, as much as we love the hot frameworks of today, who knows what tomorrow will bring? By choosing Web Components, you help to insulate yourself from the threat of tech churn.
+### Stencil 如何优化组件文件大小和启动？
 
+传统框架提供运行时 API，开发人员可以选择每个组件使用哪些 API。但是，这意味着每个功能都需要对每个组件可用，以防组件可能会或可能不会使用 API。
 
-### How is Stencil able to optimize component file size and startup?
+使用 Stencil，编译器能够对每个组件执行静态分析，以了解正在使用和未使用哪些 API。通过这样做，Stencil 能够自定义每个构建以准确使用每个组件所需的内容，从而以实现组件的运行时高度优化和最小的尺寸。
 
-Traditional frameworks provide a runtime API, and developers can pick and choose which APIs to use per component. However, this means every feature needs to be available to every component, just in case the component may or may not use the API.
+由于 Stencil 使用编译器，因此可以在新的改进和功能可用时调整代码。源代码可以继续使用相同的公共 API 和语法编写，而编译器可以调整代码以进一步利用现代功能，而无需重新编写。
 
-With Stencil, the compiler is able to perform static analysis on each component in order to understand which APIs are and are not being used. By doing so, Stencil is able to customize each build to use exactly what each component needs, making for a highly optimized runtime with minimal size.
 
-Since Stencil uses a compiler, it is able to adjust code as new improvements and features become available. Source code can continue to be written using the same public API and syntax, while the compiler can adjust the code to further take advantage of modern features, without requiring re-writes.
+### Stencil 使用什么模板语法？
 
+Stencil 并没有创造另一种需要记录和学习的模板语法，而是选择了可以说是最常用的模板语法：JSX。由于 React 的流行，全球数以百万计的开发人员已经熟悉 JSX，这使得开发人员更容易快速上手 Stencil。此外，使用传统的运行时模板语法，API 的任何更改通常都需要重写组件。
 
-### What template syntax does Stencil use?
+需要注意的是，JSX 和 VDom 不一定是同一个东西。一个是模板语法（JSX），另一个是渲染器（VDom）。 Stencil 使用了一个更小且高度优化的 VDom，但是渲染器的“如何”工作和要进行的改进都在 JSX 之后。所有这一切都是为了编译器的优势，允许用户使用众所周知的 JSX 语法编写代码，同时让内部结构进一步优化。
 
-Rather than inventing yet another template syntax which needs to be documented and taught, Stencil opted for arguably the most commonly used template syntax: JSX. Millions of developers around the world are already familiar with JSX due to React’s popularity, making it easier for developers to pick up Stencil quickly. Additionally, with a traditional runtime template syntax, any changes to the API often require a rewrite of the component.
 
-It’s important to note that JSX and VDom are not necessarily the same thing. One is a template syntax (JSX) and the other is a renderer (VDom). Stencil uses a much smaller and highly optimized VDom, but “how” the renderer works and improvements to be made are behind JSX. All of this is to a compiler’s advantage, allowing users to write  code in the commonly known JSX syntax, while letting the internals optimize further.
+### 为什么 Stencil 允许延迟加载组件？
 
+延迟加载组件有助于减少应用程序启动时间、减小包大小并改进分发。
 
-### Why does Stencil allow components to be lazy loaded?
+例如，Ionic Framework 包含近 100 个 UI 组件，这些组件都是使用 Stencil 构建的。如果没有延迟加载，Ionic 的入口文件大约为 800kb。使用延迟加载，所有 Ionic 的脚本只有 5kb。这包括用于 iOS 和 Material Design 以及动画和手势库的组件。由于 Ionic 能够动态加载使用的内容，启动时间大大减少，用户只加载应用程序第一次绘制所需的内容。
 
-Lazy loading components helps to reduce application startup times, decrease bundle sizes, and improve distribution.
+同时，使用 Stencil 构建的组件仍然可以被传统打包器导入和使用。它们也可以被预渲染（包括 shadow dom）在 Node 环境中运行，并且可以在任何框架中使用。
 
-For example, Ionic Framework includes close to 100 UI components that are all built with Stencil. Without lazy loading, Ionic’s entry file would be roughly 800kb. With lazy loading, the script for all of Ionic is just 5kb. This includes components for both iOS and Material Design, and for the animation and gesture libraries. Because Ionic is able to dynamically load only what is used, startup times are drastically reduced and users only load exactly what their application’s first paint requires.
+组件库的使用者可能会使用一个组件、几个组件或所有组件。在任何这些场景中，只需添加脚本标签即可使用组件库，延迟加载可确保快速启动且带宽占用低。
 
-At the same time, components built with Stencil can still be imported and consumed by traditional bundlers. They can also be prerendered, to include shadow dom, run in a Node environment, and can be used within any framework.
+你还可以在 [如何使用 Stencil 延迟加载 Web 组件](/blog/how-lazy-loading-web-components-work) 中了解有关延迟加载的更多信息。
 
-A consumer of a component library may use one component, a few of them, or all of them. In any of these scenarios a component library is used by just adding a script tag, lazy loading ensures fast startup with a low bandwidth footprint.
 
-You can also learn more about lazy loading in [How Lazy-Loading Web Components Work with Stencil](/blog/how-lazy-loading-web-components-work).
+### 为什么 Stencil 不扩展 HTMLElement？
 
+Web Component 规范的一部分是扩展 HTMLElement 。但是，由于一些原因，Stencil 不需要这样做。具体来说，HTMLElement 将源代码锁定为仅在浏览器中工作，而不是使逻辑不受任何 API 的影响。 Stencil 编译器能够针对不同的输出目标优化许多不同版本的组件，一种简化方法是将 HTMLElement 排除在外。
 
-### Why doesn’t Stencil extend HTMLElement?
 
-Part of the Web Component spec is to extend HTMLElement, however, Stencil does not require this for a few reasons. Specifically, HTMLElement locks source code to only work in the browser, rather than keeping the logic free from any APIs. The Stencil compiler is able to optimize many different versions of components for various output targets, and one way to make that easier is by keeping HTMLElement out of it.
+### 为什么 Stencil 组件是用 TypeScript 编写的？
 
+Stencil 最初是为 Ionic 构建的，根据我们的经验，TypeScript 是在多个团队之间维护大型代码库的宝贵工具。
 
-### Why are Stencil components written with TypeScript?
 
-Stencil was originally built for Ionic, and in our experience we’ve found TypeScript to be a valuable tool for maintaining a large codebase across multiple teams.
+### Stencil 运行时有哪些依赖项？
 
+没有任何依赖项。 Stencil 生成的代码不依赖于 Stencil，而是生成高度优化的、无框架的、独立的代码，在浏览器中本地运行。
 
-### What dependencies does the Stencil runtime have?
 
-None. The code generated by Stencil does not rely on Stencil, but rather it generates highly-optimized, framework-free, stand-alone code which runs natively in the browser.
+### Stencil 编译器有哪些依赖项？
 
+TypeScript ， 仅此此而已。
 
-### What dependencies does the Stencil compiler have?
 
-TypeScript. That’s it.
+### 数据可以传递给 Web Components 吗？
 
+就像网页中的任何其他 DOM 元素一样，任何以数组、对象、字符串和数字形式存在的数据都可以传递给元素属性。 Stencil 是从头开始设计的，以确保应用程序开发人员可以解锁此功能。
 
-### Can data be passed to Web Components?
+错误地声称只有字符串可以传递给自定义元素的一种误解来自 React 的 VDom 版本。开箱即用，React 只能将字符串和数字传递给组件，而不能侦听自定义事件。使用 Stencil，组件看起来就像是 React 组件，并且所有属性都可以正确传递，包括函数、对象和数组。绑定还通过创建一个名为“on<EventName>”的道具来处理自定义事件。这些允许 React 开发人员与 Web 组件交互，就好像它们是 React 组件一样。
 
-Just like any other DOM element in a webpage, any data in the form of arrays, objects, strings and numbers can be passed to element properties. Stencil is designed from the ground up to ensure this capability stays unlocked for application developers.
 
-One misconception that falsely claims only strings can be passed to custom elements comes from React’s version of VDom. Out of the box, React can only pass strings and numbers to components and it cannot listen to custom events. With Stencil, the components appear as though they are React components and all properties get passed correctly including functions, objects, and arrays. The bindings also account for custom events by creating a prop called “on<EventName>”. These allow React developers to interact with the Web Components as though they are React components.
+### Stencil 是用什么技术构建的？
 
+Stencil 编译器是用 TypeScript 构建的，并且 [发布在 npm 上](https://www.npmjs.com/package/@stencil/core)。它的发行版包括类型，使开发人员可以更轻松地使用 Stencil API。
 
-### What technology is Stencil built with?
 
-The Stencil compiler is built with TypeScript and is [distributed on npm](https://www.npmjs.com/package/@stencil/core). Its distribution includes types, making it easier for developers to use Stencil APIs.
+## 能力
 
+### 在哪里可以使用 Stencil 组件？
 
-## Capabilities
+使用 Web Components 的一大优势是您的组件库将适用于所有项目，而不仅仅是桌面 Web 应用程序。
 
-### Where can Stencil components be used?
+例如，使用像 Ionic 这样的混合移动框架，您可以在几乎任何平台或设备上部署 Web 组件，从原生 iOS 和 Android 应用程序，到 Electron 和桌面 Web 应用程序，甚至是渐进式 Web 应用程序。
 
-One great advantage of using Web Components is that your component library will work across all projects, not just desktop web apps.
 
-For example, using a hybrid mobile framework like Ionic, you can deploy Web Components across just about any platform or device, from native iOS and Android apps, to Electron and desktop web apps, and even Progressive Web Apps.
+### Web Components 有哪些限制？
 
+[Web 组件](https://developer.mozilla.org/en-US/docs/Web/Web_Components) 规范是很基础的，本身不提供框架质量的开发人员体验。 Web Components 运行在一组相当原始的标准上，因此您需要一点帮助才能使它们满足您的目标。
 
-### What are the limitations of Web Components?
+其中一些限制包括：
 
-The [Web Component](https://developer.mozilla.org/en-US/docs/Web/Web_Components) specs are purposely low-level, and on their own, they do not provide a framework quality developer experience. Web Components run on a fairly primitive set of standards, so you will need a little help to get them to meet your objectives.
+当尝试在应用程序中使用纯原生 Web Components 时，默认情况下不支持服务器端渲染和渐进增强等功能，并且
+一些过时的客户端不支持 Web Components 标准。
 
-Some of the limitations include:
+此外，虽然 Web Components 在技术上适用于任何框架，但存在一些限制，例如缺乏类型支持和输入绑定，以及将属性传递给组件的挑战，如上所述。
 
-When you try to use pure vanilla Web Components in an application, functionality like server-side rendering and progressive enhancement is not supported by default, and
-some out-of-date clients don’t support the Web Components standard.
+好消息是，在 Stencil 等开源工具的帮助下，可以克服所有这些挑战。 Stencil 包含 Angular、React 和 Vue 的框架绑定，因此您可以轻松地将 Web 组件库导入任何框架，并像它们在该框架中一样与它们进行交互，并使用您习惯的所有功能。
 
-In addition, while Web Components technically work with any framework, there are some limitations like lack of type support and input bindings, and challenges passing properties to components, as noted above.
+### 什么是框架绑定？
 
-The good news is that, with help from open source tools like Stencil, you can overcome all of these challenges. Stencil includes framework bindings for Angular, React, and Vue, so you can easily import Web Component libraries into any framework, and interact with them just like they were native to that framework, with all the functionality you’re used to.
+虽然 Web Components 可以与任何 JavaScript 框架配对，但 Stencil 具有内置的专用绑定，可提供企业团队在使用 Angular、React 和 Vue 构建应用程序时所需要的更高级的功能。
 
+### Stencil 为 Web Components 添加了哪些功能？
 
-### What are framework bindings?
+Web Components 本身不足以提供高质量的开发体验。构建快速的 Web 应用程序需要在之前闭锁的传统 Web 框架内的创新。 Stencil 旨在将这些功能从传统框架中提取出来，并将它们带入快速新兴的 Web Component 标准组件。
 
-While Web Components can be paired with any JavaScript framework, Stencil has built-in special-purpose bindings to deliver the more advanced features enterprise teams expect when building applications in Angular, React, and Vue.
+与直接使用 Web Components 相比，Stencil 提供了额外的 API，使编写快速组件变得更简单。虚拟 DOM、JSX 和异步渲染等 API 使快速、强大的组件易于创建，同时仍保持与 Web Components 的 100% 兼容性。
 
 
-### What features does Stencil add to Web Components?
+### 哪些浏览器可以支持 Stencil 组件？
 
-Web Components by themselves weren't enough to provide a quality development experience. Building fast web apps required innovations that were previously locked up inside of traditional web frameworks. Stencil was built to pull these features out of traditional frameworks and bring them to the fast emerging Web Component standard.
+Stencil 适用于现代浏览器和 Internet Explorer 11。
 
-Compared to using Web Components directly, Stencil provides extra APIs that make writing fast components simpler. APIs like Virtual DOM, JSX, and async rendering make fast, powerful components easy to create, while still maintaining 100% compatibility with Web Components.
+[了解有关浏览器支持的更多信息](/docs/browser-support)。
 
 
-### What browsers can support Stencil components?
+### Stencil 提供哪些 polyfills？
 
-Stencil works on modern browsers and Internet Explorer 11.
+为了让 Stencil 在 Internet Explorer 11 及更高版本上运行，需要一些 polyfill。幸运的是，Stencil 对于现代浏览器不必下载任何 polyfill。
 
-[Learn more about browser support](/docs/browser-support).
+此外，现代浏览器能够在本地使用最新功能，而无需转换为 ES5（并使代码更易于调试）。例如，所有 ES 2017 功能（如 async/await）均在本机运行。
 
+## Stencil 项目
 
-### What polyfills does Stencil provide?
+### 我可以从哪里获得支持？
 
-In order for Stencil to work on Internet Explorer 11 and above, a few polyfills are required. Luckily, Stencil’s architecture allows for modern browsers to not have to download any polyfills.
+如果这是您第一次构建设计系统，或者您是 Stencil 的新手，请[联系](https://ionicframework.com/sales?product_of_interest=Design%20Systems) 与我们的一位解决方案工程师进行咨询了解如何实现目标并充分利用平台。
 
+### 我如何参与？
 
-Additionally, modern browsers are able to use the latest features natively, without having to transpile down to ES5 (and making the code even easier to debug). For example, all ES 2017 features such as async/await run natively.
+Stencil 是一个开源项目，我们鼓励您做出贡献。您可以首先在 GitHub 上创建问题、提交功能请求并帮助解决错误。如果您对贡献感兴趣，请参阅我们的 [贡献者指南](https://github.com/ionic-team/ionic/blob/master/.github/CONTRIBUTING.md) 并查看我们的 [问题跟踪器]( https://github.com/ionic-team/stencil/issues）。
 
 
-## Stencil Project
+### Stencil 是开源的吗？
 
-### Where can I get support?
+是的，Stencil 是开源的，其源代码可以在 [GitHub 上找到](https://github.com/ionic-team/stencil)。欢迎来自社区的贡献。
 
-If this is your first time building a design system, or you’re new to Stencil, [get in touch](https://ionicframework.com/sales?product_of_interest=Design%20Systems) with one of our Solutions Engineers for a consultation on how to meet your goals and get the most out of the platform.
+### Stencil 使用哪个软件许可协议？
 
+Stencil 的软件 [许可协议是 MIT](https://github.com/ionic-team/stencil/blob/master/LICENSE)。
 
-### How do I get involved?
 
-Stencil is an open source project, and we encourage you to contribute. You can start by creating issues on GitHub, submitting feature requests, and helping to replicate bugs. If you’re interested in contributing, please see our [Contributor Guide](https://github.com/ionic-team/ionic/blob/master/.github/CONTRIBUTING.md) and check out our [issue tracker](https://github.com/ionic-team/stencil/issues).
+### 谁负责 Stencil 的工作？
 
-
-### Is Stencil open source?
-
-Yes, Stencil is open source and its source code can be [found on GitHub](https://github.com/ionic-team/stencil). Contributions are welcomed from the community.
-
-
-### Which software license does Stencil use?
-
-Stencil’s software [license is MIT](https://github.com/ionic-team/stencil/blob/master/LICENSE).
-
-
-### Who works on Stencil?
-
-The majority of the development is done by engineers at [Ionic](https://github.com/ionic-team/ionic). If you’re excited about Stencil, we encourage you to join the community and contribute! Best place to start is on the [Stencil Slack Channel](https://stencil-worldwide.herokuapp.com/).
+大部分开发工作由 [Ionic](https://github.com/ionic-team/ionic) 的工程师完成。如果您对 Stencil 感到兴奋，我们鼓励您加入社区并做出贡献！最好的开始是 [Stencil Slack Channel](https://stencil-worldwide.herokuapp.com/)。
 

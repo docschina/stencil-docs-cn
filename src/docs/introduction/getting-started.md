@@ -6,20 +6,19 @@ contributors:
   - jthoms1
 ---
 
-# Getting Started
+# 快速开始
 
-## Starting a new project
+## 开始一个新项目
 
-Stencil requires a recent LTS version of [NodeJS](https://nodejs.org/) and npm. Make sure you've installed and/or updated Node before continuing.
+Stencil 需要最新的 LTS 版本 [NodeJS](https://nodejs.org/) 和 npm。在开始之前，请确保您已经安装和/或更新了 Node。
 
-> Note that you will need to use npm 6 or higher.
+> 需要使用 npm 6及以上版本。
 
 ```bash
  npm init stencil
 ```
 
-Stencil can be used to create standalone components, or entire apps. After running init
-you will be provided with a prompt so that you can choose the type of project to start.
+Stencil 可用于创建独立组件或整个应用程序。运行init后,您将收到一个提示，以便您可以选择要启动的项目类型。
 
 ```bash
 ? Pick a starter › - Use arrow-keys. Return to submit.
@@ -30,9 +29,9 @@ you will be provided with a prompt so that you can choose the type of project to
 ```
 
 
-## Updating Stencil
+## 更新 Stencil
 
-To get the latest version of @stencil/core you can run:
+要获得最新版本的 @stencil/core，您可以运行：
 
 ```bash
 npm install @stencil/core@latest --save-exact

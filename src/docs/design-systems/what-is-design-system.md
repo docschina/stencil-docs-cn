@@ -6,25 +6,25 @@ contributors:
   - dotNetkow
 ---
 
-# What is a Design System?
+# 什么是设计系统？
 
-A Design System consists of UI components and a clearly defined visual style, released as both code implementations and design artifacts. When adopted by all product teams, a more cohesive customer experience emerges.
+设计系统由 UI 组件和明确定义的视觉样式组成，作为代码实现和设计工件发布。当所有产品团队都采用时，就会出现更具凝聚力的客户体验。
 
-There are several aspects that Design Systems consist of.
+设计系统包括以下几个方面。
 
-## Components
-A component is a standalone UI element designed to be reusable across many projects. Its goal is to do one thing well while remaining abstract enough to allow for a variety of use cases. Developers can use them as building blocks to build new user experiences. A key benefit quickly becomes clear: not having to worry about the core design and functionality of each component every time they use them. Examples include buttons, links, forms, input fields, and modals.
+## 组件
+组件是一个独立的 UI 元素，旨在许多项目中重复使用。它的目标是做好一件事，同时保持足够抽象以匹配各种使用场景。开发人员可以将它们用作构建块来构建新的用户体验。一个好处就是会变得清：每次使用它们时，不必担心每个组件的核心设计和功能。示例包括按钮、链接、表单、输入字段和模式。
 
-## Patterns
-A pattern is an opinionated use of components. Often, multiple components are combined together in order to create a standardized user experience (UX). Their key benefit is intertwined: UX as well as developer experience (DX). After implementing patterns, users will understand the application better and accomplish their tasks faster. When the development team understands the proper way to use components together, software applications become easier to use. Examples include saving data to the system, capturing data from forms, and filtering and analyzing data.
+## 模式
+模式是对组件的一种组合的使用。通常，多个组件组合在一起以创建标准化的用户体验 (UX)。它们的主要优势是相互交织的：UX 和开发人员体验 (DX)。实施模式后，用户将更好地理解应用程序并更快地完成他们的任务。当开发团队了解一起使用组件的正确方法时，软件应用程序变得更容易使用。例如：将数据保存到系统、从表单捕获数据以及过滤和分析数据。
 
-## Visual Language
-A cohesive company brand strengthens its value in the minds of the customer. In the context of Design Systems, this means defining various aspects of the visual style, including colors, typography, and icons. Defining primary, secondary, and tertiary colors helps an application stand out and is more user-friendly. The right typography ensures users are not distracted while using an app. Finally, icons increase engagement in a product and make it “pop” visually.
+## 视觉语言
+一个有凝聚力的公司品牌会增强其在客户心目中的价值。在设计系统的上下文中，这意味着定义视觉风格的各个方面，包括颜色、排版和图标。定义主要、次要和非主要颜色有助于应用程序脱颖而出并且更加用户友好。正确的排版可确保用户在使用应用程序时不会分心。最后，图标增加了产品的参与度并使其在视觉上“流行”。
 
-## Design Artifacts and Code Implementations
-By leveraging the components, patterns, and visual language of the Design System, designers can create design artifacts representing UI workflows. Developers refer to the artifacts as guidance for implementing the design with code.
+## 设计工件和代码实现
+通过利用设计系统的组件、模式和视觉语言，设计人员可以创建代表 UI 工作流的设计工件。开发人员将工件称为使用代码实现设计的指南。
 
-## The Value of Design Systems
-With a design system in place, its true value is revealed. The entire product development team is freed up to focus on what matters most: solving customer problems and delivering value. Additionally, the avoidance of having teams working in parallel, recreating the same UI elements over and over,   has a real-world project impact in terms of reduced time to market and increased cost savings.
+## 设计系统的价值
+有了设计系统，它的真正价值就会显现出来。整个产品开发团队可以腾出时间专注于最重要的事情：解决客户问题和交付价值。此外，避免让团队并行工作，一遍又一遍地重新创建相同的 UI 元素，在缩短上市时间和增加成本节约方面会对项目产生深远的影响。
 
-Design Systems allow project teams to work better together. Designers define a centralized “source of truth” for software application best practices, referencable by anyone in a product organization. Developers no longer need to spend time rethinking how to build common app scenarios, such as application search or data table grids. When the business inevitably makes changes to the Design System, they can easily be applied to all projects. The end result is a better product for your users.
+设计系统保证项目团队更好地合作。设计人员为软件应用程序最佳实践定义了一个集中的“事实来源”，可供产品组织中的任何人参考。开发人员不再需要花时间重新思考如何构建常见的应用场景，例如应用搜索或数据表网格。当业务不可避免地对设计系统进行更改时，它们可以轻松应用于所有项目。最终结果是为您的用户提供更好的产品。

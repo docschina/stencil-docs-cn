@@ -17,6 +17,26 @@ export class ContributorList {
 
     return (
       <section>
+        <div>
+          <h5>Translators</h5>
+          <div>
+            <ul>
+            <li>
+                <a rel="noopener" href={`https://github.com/Howie126313`} target="_blank">
+                  <span class="img-wrapper">
+                    <img
+                      src={`https://github.com/Howie126313.png?size=90`}
+                      loading="lazy"
+                      width="32"
+                      height="32"
+                      title={`Contributor Howie126313`}
+                      importance="low"/>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <h5>Contributors</h5>
         <div>
           <ul>

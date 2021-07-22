@@ -6,24 +6,23 @@ contributors:
   - dotNetkow
 ---
 
-# Using Stencil to Build a Design System
+# 使用 Stencil 构建设计系统
 
-There’s a lot that goes into creating amazing UI components. Performance, accessibility, cross-platform capabilities, and user experience (not only of the UI component itself but how it fits into the entire design system) all must be considered.
+创建令人惊叹的 UI 组件需要做很多事情。性能、可访问性、跨平台功能和用户体验（不仅是 UI 组件本身，还包括它如何融入整个设计系统）都必须考虑在内。
 
-These aspects take real effort to do well.
+这些方面需要真正的努力才能做好。
 
-Enter Stencil, a robust and highly extensible tool for building design systems. With its intentionally minimalistic tooling and API footprint, it’s simple to incorporate into your existing development workflows. It brings substantial performance out of the box by leveraging a tiny runtime. Most importantly, all UI components built with Stencil are based 100% on open web standards.
+进入 Stencil，这是一种用于建筑设计系统的强大且高度可扩展的工具。凭借其有意简约的工具和 API 足迹，可以轻松地将其整合到您现有的开发工作流程中。它通过运行时很小的开销带来了开箱即用的显着性能。最重要的是，所有使用 Stencil 构建的 UI 组件都 100% 基于开放的 Web 标准。
 
-## The importance of open web standards
-By using the web components standard, supported in all modern browsers, Stencil-built UI components offer many distinct advantages for use in a design system, namely:
+## 开放网络标准的重要性
+通过使用所有现代浏览器都支持的 Web components 标准，Stencil 构建的 UI 组件为在设计系统中的使用提供了许多独特的优势，即：
 
-* They work on any platform or device
-* They work with any front-end framework, so they can easily be used across teams and projects using different tech stacks
-* They facilitate the creation of one company-wide code implementation instead of one per framework or platform
+* 在任何平台或设备上工作
+* 适用于任何前端框架，因此可以轻松地在使用不同技术堆栈的团队和项目中使用
+* 有助于创建一个公司范围的代码实现，而不是每个框架或平台一个
 
-Learn more about why web components are ideal for design systems in [this blog post](https://blog.ionicframework.com/5-reasons-web-components-are-perfect-for-design-systems/).
+在 [博文](https://blog.ionicframework.com/5-reasons-web-components-are-perfect-for-design-systems/) 中详细了解为什么 Web components 是设计系统的理想选择。
 
-## How to Get Started
-Stencil’s out-the-box features will help you build your own library of universal UI components that will work across platforms, devices, and front-end frameworks. Review the documentation on this site to get started.
-
-__Need help building and scaling your company's design system?__ With Ionic as your development partner, you can reduce design debt, connect disparate tech teams, and get assistance enforcing brand consistency at scale. [Learn more about Stencil Enterprise.](https://ionic.io/products/stencil)
+## 如何开始
+Stencil 的开箱即用功能将帮助您构建自己的通用 UI 组件库，这些组件将跨平台、设备和前端框架工作。查看此站点上的<stencil-route-link url="/docs/introduction">文档</stencil-route-link>。
+__需要帮助构建和扩展您公司的设计系统？__ 将 Ionic 作为您的开发合作伙伴，您可以减少设计债务，连接不同的技术团队，并获得帮助以实现大规模的品牌一致性。 [了解有关 Stencil Enterprise 的更多信息。](https://ionic.io/products/stencil)

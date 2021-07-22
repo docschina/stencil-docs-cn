@@ -7,10 +7,10 @@ contributors:
   - simonhaenisch
 ---
 
-# My First Component
+# 第一个组件
 
-Stencil components are created by adding a new file with a `.tsx` extension, such as `my-first-component.tsx`, and placing them in the `src/components` directory.
-The `.tsx` extension is required since Stencil components are built using [JSX](https://facebook.github.io/react/docs/introducing-jsx.html) and TypeScript.
+Stencil 组件是通过添加一个带有 `.tsx` 扩展名的新文件来创建的，例如 `my-first-component.tsx`，并将它们放置在 `src/components` 目录中。
+必须使用 `.tsx` ，因为 Stencil 组件是使用 [JSX](https://facebook.github.io/react/docs/introducing-jsx.html) 和 TypeScript 构建的。
 
 Here is an example of what a Stencil component looks like:
 

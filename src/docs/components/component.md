@@ -6,11 +6,11 @@ contributors:
   - jthoms1
 ---
 
-# Component Decorator
+# 组件装饰器
 
-Each Stencil Component must be decorated with a `@Component()` decorator from the `@stencil/core` package. In the simplest case, developers must provide an HTML `tag` name for the component. Often times, a `styleUrl` is used as well, or even `styleUrls`, where multiple different style sheets can be provided for different application modes/themes.
+每个 Stencil 组件必须使用来自 `@stencil/core` 包的 `@Component()` 装饰器进行装饰。在最简单的情况下，开发人员必须为组件提供一个 HTML 标签名称。通常，还会使用`styleUrl`，或者`styleUrls`，其中可以为不同的应用程序模式/主题提供多个不同的样式表。
 
-Use a relative url to the `.css` file for the styleUrl(s).
+styleUrl(s) 需要使用 `.css` 文件的相对路径。
 
 ```tsx
 import { Component } from '@stencil/core';
@@ -24,70 +24,70 @@ export class TodoList {
 }
 ```
 
-## Component Options
+## 组件配置
 
-The `@Component(opts: ComponentOptions)` takes a required object containing all the component-level features.
-The `tag` name is the only required property, but there are plenty of them:
+`@Component(opts: ComponentOptions)` 需要一个包含所有组件级功能的必需对象。
+`tag` 名称是唯一必需的属性，还有很多其他的属性：
 
 ```tsx
 export interface ComponentOptions {
   /**
-   * Tag name of the web component. Ideally, the tag name must be globally unique,
-   * so it's recommended to choose a unique prefix for all your components within the same collection.
+   * Web 组件的标记名称。原则上，标签名称必须是全局唯一的，
+   * 因此，建议为同一集合中的所有组件选择唯一的前缀。
    *
-   * In addition, tag name must contain a '-'
+   * 此外，标签名称必须包含“-”
    */
   tag: string;
 
   /**
-   * If `true`, the component will use scoped stylesheets. Similar to shadow-dom,
-   * but without native isolation. Defaults to `false`.
+   * 如果为“true”，则组件将使用作用域样式表。类似于 shadow-dom，
+   * 但没有原生隔离。默认为`false`。
    */
   scoped?: boolean;
 
   /**
-   * If `true`, the component will use native shadow-dom encapsulation, it will fallback to `scoped` if the browser
-   * does not support shadow-dom natively. Defaults to `false`.
+   * 如果为 true ，组件将使用原生 shadow-dom 封装，如果浏览器将回退到作用域样式
+   * 对于不支持 shadow-dom 的环境，默认为`false`。
    */
   shadow?: boolean;
 
   /**
-   * Relative URL to some external stylesheet file. It should be a `.css` file unless some
-   * external plugin is installed like `@stencil/sass`.
+   * 某些外部样式表文件的相对 URL。它应该是一个 `.css` 文件，除非有
+   * 外部插件像`@stencil/sass`。
    */
   styleUrl?: string;
 
   /**
-   * Similar as `styleUrl` but allows to specify different stylesheets for different modes.
+   * 与 styleUrl 类似，但允许为不同的模式指定不同的样式文件。
    */
   styleUrls?: string[] | d.ModeStyles;
 
   /**
-   * String that contains inlined CSS instead of using an external stylesheet.
-   * The performance characteristics of this feature are the same as using an external stylesheet.
+   * 包含内联 CSS 而不是使用外部样式表的字符串。
+   * 性能特征与使用外部样式表相同。
    *
-   * Notice, you can't use sass, or less, only `css` is allowed using `styles`, use `styleUrl` if you need more advanced features.
+   * 注意，不能使用 sass，或 less，只允许使用 `styles` 的 `css`，如果需要更高级的功能，请使用 `styleUrl`。
    */
   styles?: string;
 
   /**
-   * Array of relative links to folders of assets required by the component.
+   * 包含组件所需资源文件夹相关链接的数组。
    */
   assetsDirs?: string[];
 
   /**
-   * @deprecated Use `assetsDirs` instead
+   * @deprecated 改用`assetsDirs`
    */
   assetsDir?: string;
 }
 ```
 
 
-## Embedding or Nesting Components
+## 嵌入或嵌套组件
 
-Components can be composed easily by adding the HTML tag to the JSX code. Since the components are just HTML tags, nothing needs to be imported to use a Stencil component within another Stencil component.
+通过将 HTML 标签添加到 JSX 代码，可以轻松组合组件。由于组件只是 HTML 标记，因此无需导入任何内容即可在另一个 Stencil 组件中使用 Stencil 组件。
 
-Here's an example of using a component within another component:
+这是在另一个组件中使用一个组件的示例：
 
 ```tsx
 import { Component, Prop, h } from '@stencil/core';
@@ -124,4 +124,4 @@ export class MyParentComponent {
 }
 ```
 
-The `my-parent-component` includes a reference to the `my-embedded-component` in the `render()` function.
+`my-parent-component` 在 `render()` 函数中包含对 `my-embedded-component` 的嵌套使用。

@@ -53,57 +53,57 @@
         "url": "/docs/api"
       },
       {
-        "text": "Component",
+        "text": "组件",
         "filePath": "/assets/docs/components/component.json",
         "url": "/docs/component"
       },
       {
-        "text": "Lifecycle Methods",
+        "text": "生命周期",
         "filePath": "/assets/docs/components/component-lifecycle.json",
         "url": "/docs/component-lifecycle"
       },
       {
-        "text": "Properties",
+        "text": "属性",
         "filePath": "/assets/docs/components/properties.json",
         "url": "/docs/properties"
       },
       {
-        "text": "Internal State",
+        "text": "内部状态",
         "filePath": "/assets/docs/components/state.json",
         "url": "/docs/state"
       },
       {
-        "text": "Reactive Data",
+        "text": "响应式数据",
         "filePath": "/assets/docs/components/reactive-data.json",
         "url": "/docs/reactive-data"
       },
       {
-        "text": "Using JSX",
+        "text": "使用 JSX",
         "filePath": "/assets/docs/components/templating-and-jsx.json",
         "url": "/docs/templating-jsx"
       },
       {
-        "text": "Events",
+        "text": "事件",
         "filePath": "/assets/docs/components/events.json",
         "url": "/docs/events"
       },
       {
-        "text": "Methods",
+        "text": "方法",
         "filePath": "/assets/docs/components/methods.json",
         "url": "/docs/methods"
       },
       {
-        "text": "Host Element",
+        "text": "Host 元素",
         "filePath": "/assets/docs/components/host-element.json",
         "url": "/docs/host-element"
       },
       {
-        "text": "Styling",
+        "text": "样式",
         "filePath": "/assets/docs/components/styling.json",
         "url": "/docs/styling"
       },
       {
-        "text": "Functional Components",
+        "text": "函数式组件",
         "filePath": "/assets/docs/components/functional-components.json",
         "url": "/docs/functional-components"
       }
@@ -113,12 +113,12 @@
     "text": "框架集成",
     "children": [
       {
-        "text": "Overview",
+        "text": "概述",
         "filePath": "/assets/docs/framework-integration/overview.json",
         "url": "/docs/overview"
       },
       {
-        "text": "Bindings",
+        "text": "绑定",
         "filePath": "/assets/docs/framework-integration/bindings.json",
         "url": "/docs/framework-bindings"
       },

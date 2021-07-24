@@ -6,14 +6,15 @@ contributors:
   - jthoms1
 ---
 
-# State Decorator
+# 状态装饰器
 
-The `@State()` decorator can be used to manage internal data for a component. This means that a user cannot modify this data from outside the component, but the component can modify it however it sees fit. Any changes to a `@State()` property will cause the components `render` function to be called again.
+`@State()` 装饰器可用于管理组件的内部数据。这意味着用户不能从组件外部修改这些数据，但组件可以修改。对 `@State()` 属性的任何更改都会导致组件的 `render` 函数再次被调用。
 
-## Example
+## 举例
 
-This example makes use of State and Listen decorators. We define a class property called `open` and decorate it with `@State`. With the use of `@Listen` we respond to click events
- toggling the value of `open`.
+这个例子使用了 `State` 和 `Listen` 装饰器。我们定义了一个名为 `open` 的类属性并用 `@State` 装饰它。使用`@Listen` 响应点击事件
+
+切换 `open` 的值。
 
 ```tsx
 import { Component, State, Listen, h } from '@stencil/core';
@@ -38,7 +39,7 @@ export class MyToggleButton {
 }
 ```
 
-For more advanced use cases state can be a complex Type. In the below example we maintain a list of `Todo` type values.
+对于更高级的使用，状态可以是复杂的类型。在下面的例子中，我们维护了一个 `Todo` 类型值的列表。
 
 ```tsx
 import { State } from '@stencil/core';
@@ -53,24 +54,24 @@ export class TodoList {
   @State() completedTodos: Todo[];
 
   completeTodo(todo: Todo) {
-    // This will cause our render function to be called again
+    // 这导致 render 函数再次调用
     this.completedTodos = [...this.completedTodos, todo];
   }
 }
 ```
 
-## When to use?
+## 什么时候使用？
 
-Not all internal state might need to be decorated with `@State()`, in fact it's a good practice to avoid using it if you know for sure that the value will not change or that it does NOT need to trigger a re-rendering:
+并非所有内部状态都需要用 `@State()` 进行修饰，事实上，如果您确定该值不会更改或不需要触发重新渲染，那就不应该使用：
 
 ```tsx
 class Component {
 
-  // If `cacheData` changes we don't want to rerender the component,
-  // so we DON'T decorate it with @State
+  // 如果不想因为 `cacheData` 改变而导致重新渲染,
+  // 没有必要使用 @State
   cacheData = SOME_BIG_DATA;
 
-  // If this state change we want to run render() again
+  // 如果希望 value 改变时重新渲染
   @State() value;
 }
 ```

@@ -10,16 +10,15 @@ contributors:
   - noherczeg
 ---
 
-# Events
+# 事件
 
-There is **NOT** such a thing as *stencil events*, instead, Stencil encourages the use of [DOM events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events).
-However, Stencil does provide an API to specify the events a component can emit, and the events a component listens to. It does so with the `Event()` and `Listen()` decorators.
+**没有**诸如 *stencil events* 这样的东西，相反，Stencil 鼓励使用 [DOM 事件](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/事件）。
+但是，Stencil 确实提供了一个 API 来指定组件可以发出的事件以及组件事件的监听。它通过`Event()` 和`Listen()` 装饰器来实现。
 
-## Event Decorator
+## 事件装饰器
 
-Components can emit data and events using the Event Emitter decorator.
-
-To dispatch [Custom DOM events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events) for other components to handle, use the `@Event()` decorator.
+组件可以使用事件推送装饰器推送数据和事件。
+设置 [自定义 DOM 事件](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events) 以供其他组件处理，请使用 `@Event()` 装饰器。
 
 ```tsx
 import { Event, EventEmitter } from '@stencil/core';
@@ -35,34 +34,34 @@ export class TodoList {
 }
 ```
 
-The code above will dispatch a custom DOM event called `todoCompleted`.
+上面的代码将定义一个名为 `todoCompleted` 的自定义 DOM 事件。
 
-The `Event(opts: EventOptions)` decorator optionally accepts an options object to shape the behavior of dispatched events. The options and defaults are described below.
+`Event(opts: EventOptions)` 装饰器可接受一个选项对象来修饰事件的行为。选项和默认值如下所述。
 
 ```tsx
 export interface EventOptions {
   /**
-   * A string custom event name to override the default.
+   * 用于覆盖默认值自定义事件名称的字符串。
    */
   eventName?: string;
   /**
-   * A Boolean indicating whether the event bubbles up through the DOM or not.
+   * 用来设置事件是否通过 DOM 冒泡的布尔值。
    */
   bubbles?: boolean;
 
   /**
-   * A Boolean indicating whether the event is cancelable.
+   * 设置事件是否可取消的布尔值。
    */
   cancelable?: boolean;
 
   /**
-   * A Boolean value indicating whether or not the event can bubble across the boundary between the shadow DOM and the regular DOM.
+   * 一个布尔值，指示事件是否可以跨越 shadow DOM 和常规 DOM 之间的边界冒泡。
    */
   composed?: boolean;
 }
 ```
 
-Example:
+举例：
 
 ```tsx
 import { Event, EventEmitter } from '@stencil/core';
@@ -87,11 +86,11 @@ export class TodoList {
 }
 ```
 
-## Listen Decorator
+## 监听装饰器
 
-The `Listen()` decorator is for listening to DOM events, including the ones dispatched from `@Events`.
+`Listen()` 装饰器用于监听 DOM 事件，包括从 `@Events` 分派的事件。
 
-In the example below, assume that a child component, `TodoList`, emits a `todoCompleted` event using the `EventEmitter`.
+在下面的示例中，假设子组件 `TodoList` 使用 `EventEmitter` 发出 `todoCompleted` 事件。
 
 ```tsx
 import { Listen } from '@stencil/core';
@@ -106,9 +105,9 @@ export class TodoApp {
 }
 ```
 
-### Listen's options
+### 监听配置
 
-The `@Listen(eventName, opts?: ListenOptions)` includes a second optional argument that can be used to configure how the DOM event listener is attached.
+`@Listen(eventName, opts?: ListenOptions)` 包含第二个可选参数，可用于配置 DOM 事件侦听器的附加方式。
 
 ```tsx
 export interface ListenOptions {

@@ -117,15 +117,14 @@ export interface ListenOptions {
 }
 ```
 
-The available options are `target`, `capture` and `passive`:
+可配置参数为 `target`, `capture` and `passive`:
 
 
 #### target
 
-Handlers can also be registered for an event other than the host itself.
-The `target` option can be used to change where the event listener is attached, this is useful for listening to application-wide events.
-
-In the example below, we're going to listen for the scroll event, emitted from `window`:
+回调也可以处理 host 本身以外的注册事件。
+`target` 选项用于更改事件监听器的附加范围，用于设置监听事件应用程序范围。
+在下面的示例中，我们将监听从 `window` 发出的滚动事件：
 
 ```tsx
   @Listen('scroll', { target: 'window' })
@@ -136,17 +135,14 @@ In the example below, we're going to listen for the scroll event, emitted from `
 
 #### passive
 
-By default, Stencil uses several heuristics to determine if it must attach a `passive` event listener or not. The `passive` option can be used to change the default behaviour.
-
-Please check out [https://developers.google.com/web/updates/2016/06/passive-event-listeners](https://developers.google.com/web/updates/2016/06/passive-event-listeners) for further information.
-
+默认情况下，Stencil 使用几种启发式方法来确定它是否必须附加一个 `passive` 事件监听器。 `passive` 选项可用于更改默认行为。
+请查看 [https://developers.google.com/web/updates/2016/06/passive-event-listeners](https://developers.google.com/web/updates/2016/06/passive-event -listeners) 以获取更多信息。
 
 #### capture
 
-Event listener attached with `@Listen` does not "capture" by default.
-When a event listener is set to "capture", it means the event will be dispatched during the "capture phase".
-Check out [https://www.quirksmode.org/js/events_order.html](https://www.quirksmode.org/js/events_order.html) for further information.
-
+带有 `@Listen` 的` capture` 默认值为 false。
+当事件侦听器设置为 `capture` 为 true 时，表示将在“捕获阶段”期间调度事件。
+查看 [https://www.quirksmode.org/js/events_order.html](https://www.quirksmode.org/js/events_order.html) 了解更多信息。
 
 ```tsx
   @Listen('click', { capture: true })
@@ -155,9 +151,9 @@ Check out [https://www.quirksmode.org/js/events_order.html](https://www.quirksmo
   }
 ```
 
-## Keyboard events
+## 键盘事件
 
-For keyboard events, you can use the standard `keydown` event in `@Listen()` and use `event.keyCode` or `event.which` to get the key code, or `event.key` for the string representation of the key.
+对于键盘事件，可在 `@Listen()` 中使用标准的 `keydown` 事件，并使用 `event.keyCode` 或 `event.which` 获取键码，或使用 `event.key` 获取字符串表示的键盘按钮。
 
 ```tsx
 @Listen('keydown')
@@ -167,14 +163,13 @@ handleKeyDown(ev: KeyboardEvent){
   }
 }
 ```
-More info on event key strings can be found in the [w3c spec](https://www.w3.org/TR/uievents-key/#named-key-attribute-values).
+有关事件键字符串的更多信息，请参见 [w3c 规范](https://www.w3.org/TR/uievents-key/#named-key-attribute-values)。
 
+## 在 JSX 中使用事件
 
-## Using events in JSX
+在模板编译的应用程序或组件中，您还可以直接在 JSX 中将监听器绑定到事件。这与普通 DOM 事件（例如 `onClick` ）非常相似。
 
-Within a stencil compiled application or component you can also bind listeners to events directly in JSX. This works very similar to normal DOM events such as `onClick`.
-
-Let's use our TodoList component from above:
+让我们使用上面的 TodoList 组件：
 
 ```tsx
 import { Event, EventEmitter } from '@stencil/core';
@@ -190,18 +185,18 @@ export class TodoList {
 }
 ```
 
-We can now listen to this event directly on the component in our JSX using the following syntax:
+我们现在可以使用以下语法直接在 JSX 中的组件上监听此事件：
 
 ```tsx
 <todo-list onTodoCompleted={ev => this.someMethod(ev)} />
 ```
 
-## Listening to events from a non-JSX element
+## 监听来自非 JSX 元素的事件
 
 ```tsx
 <todo-list></todo-list>
 <script>
   const todoListElement = document.querySelector('todo-list');
-  todoListElement.addEventListener('todoCompleted', event => { /* your listener */ })
+  todoListElement.addEventListener('todoCompleted', event => { /* 监听回调 */ })
 </script>
 ```

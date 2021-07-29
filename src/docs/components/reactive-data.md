@@ -1,9 +1,11 @@
 ---
-title: Reactive Data, Handling arrays and objects
-description: Reactive Data, Handling arrays and objects
+title: 响应式数据, 处理数组和对象
+description: 响应式数据, 处理数组和对象
 url: /docs/reactive-data
 contributors:
   - jthoms1
+Translators:
+  - Howie126313
 ---
 
 # 响应式数据

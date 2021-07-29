@@ -1,10 +1,12 @@
 ---
-title: Methods
-description: methods
+title: 方法装饰器
+description: 方法装饰器
 url: /docs/methods
 contributors:
   - jthoms1
   - manucorporat
+Translators:
+  - Howie126313
 ---
 
 # 方法装饰器

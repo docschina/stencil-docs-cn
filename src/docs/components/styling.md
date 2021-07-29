@@ -1,10 +1,12 @@
 ---
-title: Styling Components
-description: Styling Components
+title: 样式组件
+description: 样式组件
 url: /docs/styling
 contributors:
   - jthoms1
   - shreeshbhat
+Translators:
+  - Howie126313
 ---
 
 # 样式组件

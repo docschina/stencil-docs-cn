@@ -1,9 +1,11 @@
 ---
-title: Functional Components
-description: Functional Components
+title: 函数式组件
+description: 如何使用函数式组件
 url: /docs/functional-components
 contributors:
   - simonhaenisch
+Translators:
+  - Howie126313
 ---
 
 # 使用函数式组件

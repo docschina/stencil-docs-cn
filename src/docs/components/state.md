@@ -1,9 +1,11 @@
 ---
-title: Internal state
-description: Use the State() for component's internal state
+title: 内部状态
+description: 通过组件内的 State() 使用内部状态
 url: /docs/state
 contributors:
   - jthoms1
+Translators:
+  - Howie126313
 ---
 
 # 状态装饰器

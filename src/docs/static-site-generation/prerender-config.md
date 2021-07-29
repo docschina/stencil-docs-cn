@@ -23,7 +23,7 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'www',
-      baseUrl: 'https://stenciljs.com/',
+      baseUrl: 'https://stencil.docschina.org/',
       prerenderConfig: './prerender.config.ts',
     }
   ]

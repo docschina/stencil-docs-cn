@@ -25,7 +25,7 @@ The Stencil compiler, and its Command-Line Interface (CLI), can also be executed
 With Deno there is no `npm install` command, but instead you specify the external URL of the executable script to install. After [installing Deno](https://deno.land/#installation), run the command:
 
 ```bash
-deno install -n stencil --allow-read --allow-write --allow-net https://stenciljs.com/cli.ts
+deno install -n stencil --allow-read --allow-write --allow-net https://stencil.docschina.org/cli.ts
 ```
 
 Let's break this down a little further to explain what this command is doing:
@@ -39,7 +39,7 @@ Let's break this down a little further to explain what this command is doing:
 | `--allow-read`                 | The CLI will need to access files, so this option allows it to read local files. |
 | `--allow-write`                | The CLI will also need to write files. |
 | `--allow-net`                  | The CLI will need to access the net to install dependencies. |
-| `https://stenciljs.com/cli.ts` | The location of the Stencil's Deno installer. |
+| `https://stencil.docschina.org/cli.ts` | The location of the Stencil's Deno installer. |
 
 Don't worry, this command doesn't need to be ran everytime you're running Stencil with Deno, but instead it's just installing it, and giving your machine the executable name of `stencil`. During the installing you'll see where additional script files are coming from, which in our case is `https://cdn.jsdelivr.net/npm/`.
 
@@ -54,7 +54,7 @@ stencil help
 To update the installed Deno Stencil CLI, add the `-f` option to "force" overwriting the existing executable and reinstalling the latest.
 
 ```bash
-deno install -n stencil --allow-read --allow-write --allow-net -f https://stenciljs.com/cli.ts
+deno install -n stencil --allow-read --allow-write --allow-net -f https://stencil.docschina.org/cli.ts
 ```
 
 

@@ -1,6 +1,6 @@
 /**
  * Stencil Deno CLI 
- * https://stenciljs.com/docs/deno
+ * https://stencil.docschina.org/docs/deno
  */
 
 import { run } from 'https://cdn.jsdelivr.net/npm/@stencil/core@2.0.0-2/cli/index.js';

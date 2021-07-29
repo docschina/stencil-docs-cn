@@ -7,13 +7,13 @@ contributors:
   - brandyscarney
 ---
 
-# Framework Integration
+# 框架集成
 
-Stencil's primary goal is to remove the need for components to be written using a specific framework's API. It accomplishes this by using standardized web platform APIs that work across all modern browsers. Using the low-level component model that is provided by the browser (which all frameworks are built on) allows Stencil components to work inside of a framework or without one.
+Stencil 的主要目标是消除使用特定的框架 API 编写组件的需要。它通过使用适用于所有现代浏览器的标准化 Web 平台 API 来实现这一点。使用浏览器提供的低阶组件模型（所有框架都建立在它之上）允许 Stencil 组件在框架内工作或不工作。
 
-Stencil's integration with different frameworks is currently a work in progress. As Stencil matures, the goal is to make it easy to write standard web components which will compile to various output targets. This allows developers to stay aligned with the latest web standards while using a common API. The generated components will also be more future-proof as frameworks continue to change.
+Stencil 与不同框架的集成目前正在进行中。随着 Stencil 的成熟，目标是使编写标准 Web 组件变得容易，这些组件将编译为各种输出目标。这允许开发人员在使用通用 API 的同时与最新的 Web 标准保持一致。随着框架的不断变化，生成的组件也将更具前瞻性。
 
-The following list contains the framework integrations that have been started. All of them are not yet completed.
+以下的列表包含了已经启动的框架集成，所有的这些都还没有完成。
 
 [Angular](angular)
 

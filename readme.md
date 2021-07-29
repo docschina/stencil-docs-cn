@@ -13,7 +13,7 @@
 
 # Stencil Site
 
-The [Stencil site](https://stenciljs.com/) is the place for documentation on how to use Stencil.
+The [Stencil site](https://stencil.docschina.org/) is the place for documentation on how to use Stencil.
 
 
 ## Contributing Documentation Updates
@@ -28,7 +28,7 @@ To build the site from the source, ensure you're using the most recent versions 
 
 ## Related
 
- - [Stencil Documentation](https://stenciljs.com/)
+ - [Stencil Documentation](https://stencil.docschina.org/)
  - [Stencil Worldwide Slack](https://stencil-worldwide.herokuapp.com)
  - [Ionic](https://ionicframework.com/)
  - [Ionic Worldwide Slack](http://ionicworldwide.herokuapp.com/)

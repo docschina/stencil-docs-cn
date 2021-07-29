@@ -101,7 +101,7 @@ export class TodoList {
 
 ## 样式
 
-在 [样式页面](https://stenciljs.com/docs/styling#shadow-dom-in-stencil) 上查看有关样式的完整信息。
+在 [样式页面](https://stencil.docschina.org/docs/styling#shadow-dom-in-stencil) 上查看有关样式的完整信息。
 
 CSS 可以通过在 `@Component` 装饰器中定义的组件标签应用于 `<Host>` 元素。
 

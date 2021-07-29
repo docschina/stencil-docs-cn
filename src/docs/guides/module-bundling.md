@@ -41,7 +41,7 @@ In this case, the compiler will emit an error that looks like this:
 [ ERROR ]  src/components/my-cmp.tsx:4:1
         To allow efficient bundling, modules using @Component() can only have a single export which is the component
         class itself. Any other exports should be moved to a separate file. For further information check out:
-        https://stenciljs.com/docs/module-bundling
+        https://stencil.docschina.org/docs/module-bundling
 
   L4:  export function someUtilFunction() {
   L5:   console.log('do stuff');

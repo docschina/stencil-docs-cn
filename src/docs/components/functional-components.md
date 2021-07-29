@@ -6,21 +6,21 @@ contributors:
   - simonhaenisch
 ---
 
-# Working with Functional Components
+# 使用函数式组件
 
-Functional components are quite different to normal Stencil web components because they are a part of Stencil's JSX compiler. A functional component is basically a function that takes an object of props and turns it into JSX.
+函数式组件与普通的 Stencil Web 组件完全不同，因为它们是 JSX 编译器的一部分。函数式组件基本上是一个函数，它接受一个 props 对象并将其转换为 JSX。
 
 ```tsx
 const Hello = props => <h1>Hello, {props.name}!</h1>;
 ```
 
-When the JSX transpiler encounters such a component, it will take its attributes, pass them into the function as the `props` object, and replace the component with the JSX that is returned by the function.
+当 JSX 转译器遇到这样的组件时，它会获取它的属性，将它们作为 `props` 对象传递给函数，并用函数返回的 JSX 替换该组件。
 
 ```tsx
 <Hello name="World" />
 ```
 
-Functional components also accept a second argument `children`.
+函数式组件也接受第二个参数 `children`。
 
 ```tsx
 const Hello = (props, children) => [
@@ -29,7 +29,7 @@ const Hello = (props, children) => [
 ];
 ```
 
-The JSX transpiler passes all child elements of the component as an array into the function's `children` argument.
+JSX 转译器将组件的所有子元素作为数组传递到函数的 `children` 参数中。
 
 ```tsx
 <Hello name="World">
@@ -37,7 +37,7 @@ The JSX transpiler passes all child elements of the component as an array into t
 </Hello>
 ```
 
-Stencil provides a `FunctionalComponent` generic type that allows to specify an interface for the component's properties.
+Stencil 提供了一个 `FunctionalComponent` 泛型类型，允许为组件的属性指定一个接口。
 
 ```tsx
 // Hello.tsx
@@ -53,9 +53,9 @@ export const Hello: FunctionalComponent<HelloProps> = ({ name }) => (
 );
 ```
 
-## Working with children
+## 使用子组件
 
-The second argument of a functional component receives the passed children, but in order to work with them, the `FunctionalComponent` provides an utils object that exposes a `map()` method to transform the children, and `forEach()` to read them. Reading the `children` array is not recommended since the stencil compiler can rename the vNode properties in prod mode.
+函数式组件的第二个参数接收传递的子组件，但为了使用它们，`FunctionalComponent` 提供了一个 utils 对象，该对象公开了一个 `map()` 方法来转换子组件，以及 `forEach()` 来读取他们。不推荐读取 `children` 数组，因为模板编译器可以在 prod 模式下重命名 vNode 属性。
 
 ```tsx
 export interface FunctionalUtilities {
@@ -87,17 +87,19 @@ export const AddClass: FunctionalComponent = (_, children, utils) => (
 );
 ```
 
-> When using a functional component in JSX, its name must start with a capital letter. Therefore it makes sense to export it as such.
+> 在 JSX 中使用函数组件时，其名称必须以大写字母开头。因此，将其导出的操作是有意义的。
 
+## 差异
 
-## Disclaimer
+函数组件和类组件之间有一些主要区别。由于函数式组件只是 JSX 中的语法糖，它们...
+..
 
-There are a few major differences between functional components and class components. Since functional components are just syntactic sugar within JSX, they...
+* 没有编译成网络组件，
+* 不要创建 DOM 节点，
+* 没有 Shadow DOM 或作用域样式，
+* 没有生命周期钩子，
+* 没有状态值
 
-* aren't compiled into web components,
-* don't create a DOM node,
-* don't have a Shadow DOM or scoped styles,
-* don't have lifecycle hooks,
-* are stateless.
+在决定是否使用函数组件时，要记住的一个概念是应用程序的 UI 通常可以是其状态的函数，
 
-When deciding whether to use functional components, one concept to keep in mind is that often the UI of your application can be a function of its state, i. e., given the same state, it always renders the same UI. If a component has to hold state, deal with events, etc, it should probably be a class component. If a component's purpose is to simply encapsulate some markup so it can be reused across your app, it can probably be a functional component (especially if you're using a component library and thus don't need to style it).
+即。例如，给定相同的状态，它总是呈现相同的 UI。如果一个组件必须保持状态、处理事件等，它可能应该是一个类组件。如果一个组件的目的是简单地封装一些标记以便它可以在您的应用程序中重用，那么它可能是一个功能组件（特别是如果您使用的是组件库，因此不需要对其进行样式设置）。

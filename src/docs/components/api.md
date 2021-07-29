@@ -1,6 +1,6 @@
 ---
-title: Component API
-description: Component API
+title: 组件 API
+description: 组件 API
 url: /docs/api
 contributors:
   - manucorporat
@@ -10,6 +10,8 @@ contributors:
   - danjohnson95
   - rezaabedian
   - CookieCookson
+Translators:
+  - Howie126313
 ---
 
 # 组件 API

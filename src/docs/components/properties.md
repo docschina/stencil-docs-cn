@@ -1,9 +1,11 @@
 ---
-title: Properties
-description: Properties
+title: 属性装饰器
+description: 属性装饰器
 url: /docs/properties
 contributors:
   - jthoms1
+Translators:
+  - Howie126313
 ---
 
 # 属性装饰器

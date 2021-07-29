@@ -1,11 +1,13 @@
 ---
-title: Using JSX
-description: Using JSX
+title: 使用 JSX
+description: 使用 JSX
 url: /docs/templating-jsx
 contributors:
   - jthoms1
   - simonhaenisch
   - arjunyel
+Translators:
+  - Howie126313
 ---
 
 # 使用 JSX

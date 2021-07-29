@@ -1,12 +1,14 @@
 ---
-title: Working with host elements
-description: Working with host elements
+title: 使用 host 标签
+description: 使用 host 标签
 url: /docs/host-element
 contributors:
   - jthoms1
+Translators:
+  - Howie126313
 ---
 
-# 使用 host 元素
+# 使用 host 标签
 
 Stencil 组件在其 `render` 方法中[使用 JSX](templating-jsx) 以声明方式渲染其子组件。大多数时候，`render()` 函数描述了即将被渲染的子元素，但它也可以用来渲染宿主元素本身的属性。
 

@@ -1,9 +1,11 @@
 ---
-title: Decorators
-description: Decorators
+title: 组件装饰器
+description: 组件装饰器
 url: /docs/component
 contributors:
   - jthoms1
+Translators:
+  - Howie126313
 ---
 
 # 组件装饰器

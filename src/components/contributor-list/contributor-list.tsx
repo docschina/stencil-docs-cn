@@ -29,7 +29,18 @@ export class ContributorList {
                       loading="lazy"
                       width="32"
                       height="32"
-                      title={`Contributor Howie126313`}
+                      title={`Translators Howie126313`}
+                      importance="low"/>
+                  </span>
+                </a>
+                <a rel="noopener" href={`https://github.com/Zzhk0629`} target="_blank">
+                  <span class="img-wrapper">
+                    <img
+                      src={`https://github.com/Zzhk0629.png?size=90`}
+                      loading="lazy"
+                      width="32"
+                      height="32"
+                      title={`Translators Zzhk0629`}
                       importance="low"/>
                   </span>
                 </a>

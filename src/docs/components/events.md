@@ -1,6 +1,6 @@
 ---
-title: Events
-description: Events
+title: 事件
+description: 事件
 url: /docs/events
 contributors:
   - jthoms1
@@ -8,6 +8,8 @@ contributors:
   - BDav24
   - mattcosta7
   - noherczeg
+Translators:
+  - Howie126313
 ---
 
 # 事件

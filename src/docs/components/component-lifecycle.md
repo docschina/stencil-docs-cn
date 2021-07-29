@@ -1,9 +1,11 @@
 ---
-title: Component Lifecycle Methods
-description: Component Lifecycle Methods
+title: 组件生命周期
+description: 组件生命周期
 url: /docs/component-lifecycle
 contributors:
   - jthoms1
+Translators:
+  - Howie126313
 ---
 
 # 组件生命周期方法

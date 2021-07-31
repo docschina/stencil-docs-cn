@@ -193,12 +193,12 @@
     "text": "配置",
     "children": [
       {
-        "text": "Overview",
+        "text": "概述",
         "filePath": "/assets/docs/config/overview.json",
         "url": "/docs/config"
       },
       {
-        "text": "Dev Server",
+        "text": "本地服务",
         "filePath": "/assets/docs/config/dev-server.json",
         "url": "/docs/dev-server"
       },
@@ -223,7 +223,7 @@
     "text": "输出",
     "children": [
       {
-        "text": "Overview",
+        "text": "概述",
         "filePath": "/assets/docs/output-targets/overview.json",
         "url": "/docs/output-targets"
       },

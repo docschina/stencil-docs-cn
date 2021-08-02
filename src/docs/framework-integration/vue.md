@@ -12,13 +12,13 @@ contributors:
 
 # Vue
 
-In order to use the custom element library within the Vue app, the application must be modified to define the custom elements and to inform the Vue compiler which elements to ignore during compilation. This can all be done within the `main.js` file.
+为了在 Vue 应用程序中使用自定义元素库，必须修改应用程序以定义自定义元素并通知 Vue 编译器在编译期间忽略哪些元素。 这一切都可以在 `main.js` 文件中完成。
 
-Assuming you’ve run `npm install --save test-components` beforehand, and that `test-component` is the name of our made up Web Components that we have published to npm, you import the components into the 'main.js' file by
+假设你已经预先运行了 `npm install --save test-components`，并且 `test-component` 是我们发布到 npm 的组成的 Web 组件的名称，你将这些组件导入到 'main.js ' 文件中：
 
-- importing the node module
-- telling Vue to ignore the custom element tags (see [docs](https://vuejs.org/v2/api/#ignoredElements))
-- binding the Stenciljs component code to the window object
+- 导入模块
+- 告诉 Vue 忽略自定义元素标签 (参考 [docs](https://vuejs.org/v2/api/#ignoredElements))
+- 将 Stenciljs 组件代码绑定到 window 对象
 
 ```tsx
 import Vue from 'vue';
@@ -43,7 +43,8 @@ new Vue({
 }).$mount('#app');
 ```
 
-The components should then be available in any of the Vue components
+然后这些组件应该在任何 Vue 组件中可用
+
 ```tsx
 render() {
   return (
@@ -54,4 +55,4 @@ render() {
 }
 ```
 
-Vue provides several different ways to install and use the framework in an application. The above technique for integrating a Stencil custom element library has been tested on a Vue application that was created using the `vue-cli` with ES2015 and WebPack as primary options. A similar technique should work if the application was generated using other options.
+Vue 提供了几种不同的方式来在应用程序中安装和使用框架。上述集成 Stencil 自定义元素库的技术已经在一个 Vue 应用程序上进行了测试，该应用程序使用 `vue-cli` 创建，ES2015 和 Webpack 作为主要选项。如果应用程序是使用其他选项生成的，类似的技术应该可以工作。

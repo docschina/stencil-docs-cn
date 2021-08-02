@@ -12,8 +12,7 @@ contributors:
 ---
 # React
 
-With an application built using the `create-react-app` script the easiest way to include the component library is to call `defineCustomElements()` from the `index.js` file.
-Note that in this scenario `applyPolyfills` is needed if you are targeting Edge or IE11.
+对于使用 `create-react-app` 脚本构建的应用程序，包含组件库的最简单方法是从 `index.js` 文件调用`defineCustomElements()`。请注意，在这种情况下，如果您的目标是 Edge 或 IE11，则需要 `applyPolyfills`。
 
 ```tsx
 import React from 'react';
@@ -34,11 +33,11 @@ applyPolyfills().then(() => {
 });
 ```
 
-Following the steps above will enable your web components to be used in React, however there are some additional complexities that must also be considered.  https://custom-elements-everywhere.com/ contains a synopsis of the current issues.
+遵循上述步骤将使您的 Web 组件能够在 React 中使用，但是还必须考虑一些额外的复杂性。https://custom-elements-everywhere.com/ 包含当前问题的概要。
 
-## Properties and Events
+## 属性和事件
 
-The largest deficiencies that React currently has when it comes to working with standard HTML Custom Elements is that properties that contain non-scalar data (that is, data that is not a string or number) are not passed properly and custom events are not handled properly. The solution to both of these problems is to wrap the Custom Element in a React component, obtain a `ref` to the Custom Element, and use the `ref` in order to set the non-scalar properties and add event listeners via `addEventListener`. Here is an example showing how this works for the property passing:
+React 目前在使用标准 HTML 自定义元素时最大的缺陷是包含非标量数据（即不是字符串或数字的数据）的属性没有正确传递，自定义事件没有正确处理。 这两个问题的解决方案是将自定义元素包装在一个 React 组件中，获取自定义元素的 `ref`，并使用 `ref` 来设置非标量属性并通过 `addEventListener 添加事件监听器 `。 这是一个示例，展示了它如何用于属性传递：
 
 ```tsx
 import React, { useRef, useEffect } from 'react';
@@ -59,52 +58,52 @@ const DailyForecast: React.FC<{ forecast: Forecast; scale: string }> = ({ foreca
 export default DailyForecast;
 ```
 
-In this example, there are three properties: `forecast` is an array of objects, `iconPaths` is an object, and `scale` is a string. Since `scale` is a string it can be handled normally. However, the other two properties are non-scalar and must be set via the `ref` to the Custom Element. Wrapping the Custom Element as such prevents you from having to obtain a `ref` with every instance of `kws-daily-forecast` that you may need since you will instead be using the `DailyForecast` React component as such:
+在这个例子中，有三个属性：`forecast` 是一个对象数组，`iconPaths` 是一个对象，而 `scale` 是一个字符串。 由于 `scale` 是一个字符串，所以可以正常处理。 但是，其他两个属性是非标量的，必须通过 `ref` 设置为自定义元素。 像这样包装自定义元素可以防止您必须为您可能需要的每个 `kws-daily-forecast` 实例获取 `ref`，因为您将改为使用 `DailyForecast` React 组件：
 
 ```tsx
 <DailyForecast scale={scale} forecast={f}></DailyForecast>
 ```
 
-## Bindings
+## 绑定
 
-Manually wrapping all Custom Elements in a React Component is a good practice, but it gets tedious quickly. Using Stencil's bindings feature, Stencil-based web components are wrapped in a React component, making them immediately available as React Components.
+在 React 组件中手动包装所有自定义元素是一种很好的做法，但很快就会变得乏味。 使用 Stencil 的绑定功能，基于 Stencil 的 Web 组件被包装在一个 React 组件中，使它们可以立即作为 React 组件使用。
 
-Stencil's React bindings fix the main issues with React's web component support, including not properly passing properties. Out of the box, React can only pass strings and numbers to components and it cannot listen to custom events. With the bindings, all properties get passed correctly including functions, objects, and arrays. The bindings also account for custom events by creating a prop called ‘on<EventName>’. Finally, types are included, making code more reliable and easier to refactor. These features allow React developers to interact with the web components as though they are React components.
+Stencil 的 React 绑定修复了 React 的 Web 组件支持的主要问题，包括无法正确传递属性。开箱即用，React 只能将字符串和数字传递给组件，而不能侦听自定义事件。通过绑定，所有属性都可以正确传递，包括函数、对象和数组。绑定还通过创建一个名为“on<EventName>”的 `prop` 来处理自定义事件。最后，包含类型，使代码更可靠且更易于重构。这些特性允许 React 开发人员与 Web 组件交互，就好像它们是 React 组件一样。
 
-### Getting Started
+### 起步
 
-If you're going to compile your Stencil components into multiple framework libraries, it's recommended to create a monorepo project that contains the Stencil library alongside each framework library for easier maintainability. For a complete reference project, see [stencil-ds-plugins-demo](https://github.com/ionic-team/stencil-ds-plugins-demo).
+如果您要将 Stencil 组件编译为多个框架库，建议创建一个包含 Stencil 库和每个框架库的 monorepo 项目，以便于维护。 完整的参考项目见[stencil-ds-plugins-demo](https://github.com/ionic-team/stencil-ds-plugins-demo)。
 
-In this example, `component-library` is a Stencil library and `component-library-react` is the React library where Stencil-based React components will be generated.
+在这个例子中，`component-library` 是一个 Stencil 库，`component-library-react` 是一个 React 库，其中将生成基于 Stencil 的 React 组件。
 
-Create a monorepo directory then move any existing Stencil component repos into the monorepo project:
+创建一个 monorepo 目录，然后将任何现有的 Stencil 组件存储库移动到 monorepo 项目中:
 
 ```bash
 mkdir component-mono
 mv component-library component-mono/component-library
 ```
 
-### React Component Library Setup
+### React 组件库设置
 
-First, we need to set up the React library that will contains the Stencil-generated React components. You can create your own React project structure or use the [Stencil React template repo](https://github.com/ionic-team/stencil-ds-react-template) to bootstrap it. It's recommended that this repo lives as a sibling to your Stencil component library, so within the Stencil monorepo, clone the project:
+首先，我们需要设置包含 Stencil 生成的 React 组件的 React 库。您可以创建自己的 React 项目结构或使用 [Stencil React template repo](https://github.com/ionic-team/stencil-ds-react-template) 来引导它。建议这个 repo 作为你的 Stencil 组件库的兄弟，所以在 Stencil monorepo 中，克隆项目：
 
 ```bash
 git clone https://github.com/ionic-team/stencil-ds-react-template
 ```
 
-In `package.json`, if you already have a published Stencil library on npm, change the `component-library` dependency name to your library name then run `npm install`.
+在 `package.json` 中，如果你已经在 npm 上发布了 Stencil 库，请将 `component-library` 依赖项名称更改为你的库名称，然后运行 `npm install`。
 
-If no library has been published on npm and/or you'd like to build and test locally, remove the `component-library` dependency. Next, change into the Stencil library directory and run `npm link`. Change back into the React library and run `npm link <library>` where `library` is your Stencil library name. Finally, run `npm install`.
+如果未在 npm 上发布任何库和/或您想在本地构建和测试，请删除 `component-library` 依赖项。接下来，切换到 Stencil 库目录并运行 `npm link`。改回 React 库并运行 `npm link <library>`，其中 `library` 是您的 Stencil 库名称。最后，运行 `npm install`。
 
-### Stencil Config setup
+### Stencil Config 设置
 
-With a basic React library configured, the next step is configuring Stencil to output React components. Change into your Stencil component library directory then install the React output target:
+配置基本的 React 库后，下一步是配置 Stencil 以输出 React 组件。切换到您的 Stencil 组件库目录，然后安装 React 输出目标：
 
 ```bash
 npm install @stencil/react-output-target --save-dev
 ```
 
-Next, open `stencil.config.ts` then add React to the output target list:
+接下来，打开 `stencil.config.ts` 然后将 React 添加到输出目标列表中：
 
 ```tsx
 import { Config } from '@stencil/core';
@@ -127,33 +126,32 @@ export const config: Config = {
 
 #### componentCorePackage
 
-This is the package name of your core Stencil library containing just your web components that gets published on npm. This package is referenced as a dependency by the React package. For example, Ionic Framework's core library is `@ionic/core` and is a dependency of `@ionic/react`.
+这是您的核心 Stencil 库的包名称，其中仅包含在 npm 上发布的 Web 组件。这个包被 React 包作为依赖项引用。例如，Ionic Framework 的核心库是`@ionic/core`，是`@ionic/react` 的一个依赖。
 
 #### proxiesFile
 
-This is the output file that gets generated by the outputTarget. This file should reference a different package location. In the monorepo example here, we are choosing a sibling directory’s src directory - stencil-ds-react-template - with package name `component-library-react`. During a Stencil build, a React package is created that exports all components defined in this file.
+这是由 outputTarget 生成的输出文件。此文件应引用不同的包位置。在这里的 monorepo 示例中，我们选择了同级目录的 src 目录 - stencil-ds-react-template - 包名为`component-library-react`。在 Stencil 构建期间，会创建一个 React 包，该包导出此文件中定义的所有组件。
 
 #### includeDefineCustomElements
 
-Specifying true here (recommended) means the consuming React application doesn't have to manually import and call `defineCustomElements()` in `index.js`.
+在此处指定 true（推荐）意味着使用 React 应用程序不必手动导入和调用 `index.js` 中的 `defineCustomElements()`。
 
+配置 React 支持后，运行 `npm run build` 来创建 Stencil React 绑定。您将在 `component-library-react` 的 dist 文件夹中看到新生成的文件。
 
-With React support configured, run `npm run build` to create the Stencil React bindings. You'll see the newly generated files in `component-library-react`'s dist folder.
-
-Next, change directory into `stencil-ds-react-template` then install dependencies and build the project:
+接下来，将目录更改为 `stencil-ds-react-template` 然后安装依赖项并构建项目：
 
 ```bash
 npm install
 npm run build
 ```
 
-Next, publish the React library on npm if desired then add it as a project dependency.
+如果需要，可以在 npm 上发布 React 库，然后将其添加为项目依赖项。
 
-If you don't want to publish the library on npm and/or you'd like to build and test it locally in a React app, link the project with `npm link` then change directory into your React app and run `npm link component-library-react`.
+如果你不想在 npm 上发布库、或者你想在 React 应用程序中本地构建和测试它，请使用 `npm link` 链接项目，然后将目录更改为你的 React 应用程序并运行 `npm link component-library-react`。
 
-### Usage
+### 用法
 
-Since the Stencil-generated React library is effectively a regular React library, use it as you would any React library. Import components from the package:
+由于 Stencil 生成的 React 库实际上是一个常规的 React 库，因此可以像使用任何 React 库一样使用它。 从包中导入组件：
 
 ```tsx
 import { DemoComponent } from 'component-library-react';

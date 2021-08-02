@@ -9,16 +9,16 @@ contributors:
 
 # Ember
 
-Working with Stencil components in Ember is really easy thanks to the `ember-cli-stencil` addon. It handles:
+多亏了 `ember-cli-stencil` 插件，在 Ember 中使用 Stencil 组件非常容易。它主要处理：
 
-- Importing the required files into your `vendor.js`
-- Copying the component definitions into your `assets` directory
-- Optionally generating a wrapper component for improved compatibility with older Ember versions
+- 将所需文件导入您的 `vendor.js`
+- 将组件定义复制到您的 `assets` 目录中
+- 可选择性地生成包装器组件以提高与旧 Ember 版本的兼容性
 
-Start off by installing the Ember addon
+首先安装 Ember 插件
 
 ```bash
 ember install ember-cli-stencil
 ```
 
-Now, when you build your application, Stencil collections in your dependencies will automatically be discovered and pulled into your application. You can just start using the custom elements in your `hbs` files with no further work needed. For more information, check out the [`ember-cli-stencil` documentation](https://github.com/alexlafroscia/ember-cli-stencil).
+现在，当您构建应用程序时，您的依赖项中的 Stencil 集合将被自动发现并拉入您的应用程序。您可以开始使用您的 `hbs` 文件中的自定义元素，无需进一步的工作。有关更多信息，请查看 [`ember-cli-stencil` 文档](https://github.com/alexlafroscia/ember-cli-stencil)。
